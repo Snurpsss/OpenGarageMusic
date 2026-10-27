@@ -1,0 +1,88 @@
+{
+  "format_version": 3,
+  "name": "TONE3000",
+  "home": "https://www.tone3000.com",
+  "gives": "capture",
+  "offers": {
+    "en": "Captures of amplifiers and pedals (Neural Amp Modeler, AIDA-X, Proteus) shared by its users; free with an account. The program lists your favourites, the trending and the latest captures, and downloads the ones you ask for.",
+    "fr": "Captures d'amplis et de pédales (Neural Amp Modeler, AIDA-X, Proteus) partagées par ses utilisateurs ; gratuit avec un compte. Le programme liste vos favoris, les captures du moment et les dernières, et télécharge celles que vous demandez.",
+    "de": "Captures von Verstärkern und Pedalen (Neural Amp Modeler, AIDA-X, Proteus), von seinen Nutzern geteilt; kostenlos mit einem Konto. Das Programm listet Ihre Favoriten, die angesagten und die neuesten Captures und lädt die gewünschten herunter.",
+    "es": "Capturas de amplificadores y pedales (Neural Amp Modeler, AIDA-X, Proteus) compartidas por sus usuarios; gratuito con una cuenta. El programa lista sus favoritos, las capturas del momento y las últimas, y descarga las que usted pide.",
+    "it": "Catture di amplificatori e pedali (Neural Amp Modeler, AIDA-X, Proteus) condivise dai suoi utenti; gratuito con un account. Il programma elenca i vostri preferiti, le catture del momento e le ultime, e scarica quelle che chiedete.",
+    "pt": "Capturas de amplificadores e pedais (Neural Amp Modeler, AIDA-X, Proteus) partilhadas pelos seus utilizadores; gratuito com uma conta. O programa lista os seus favoritos, as capturas do momento e as mais recentes, e descarrega as que pedir."
+  },
+  "headers": { "Accept": "application/json" },
+  "login": {
+    "device": "https://www.tone3000.com/api/v1/oauth/device_authorization",
+    "token": "https://www.tone3000.com/api/v1/oauth/token",
+    "client_id": "",
+    "scope": "read",
+    "keys": "https://www.tone3000.com/settings"
+  },
+  "search": [
+    { "steps": [ {
+      "get": "{home}/api/v1/tones/favorited?page_size=25",
+      "items": { "json": "data" },
+      "fields": {
+        "id": { "json": "id" },
+        "title": { "json": "title" },
+        "user": { "json": "user.username" },
+        "gear": { "json": "gear" },
+        "format": { "json": "format" },
+        "license": { "json": "license" },
+        "url": { "template": "{home}/tones/{id}" }
+      },
+      "require": ["id", "title"],
+      "where": { "format": "^(nam|aida-x|proteus)$" },
+      "match_query": "title"
+    } ] },
+    { "steps": [ {
+      "get": "{home}/api/v1/tones/trending?page_size=25",
+      "items": { "json": "data" },
+      "fields": {
+        "id": { "json": "id" },
+        "title": { "json": "title" },
+        "user": { "json": "user.username" },
+        "gear": { "json": "gear" },
+        "format": { "json": "format" },
+        "license": { "json": "license" },
+        "url": { "template": "{home}/tones/{id}" }
+      },
+      "require": ["id", "title"],
+      "where": { "format": "^(nam|aida-x|proteus)$" },
+      "match_query": "title"
+    } ] },
+    { "steps": [ {
+      "get": "{home}/api/v1/tones/latest?page_size=25",
+      "items": { "json": "data" },
+      "fields": {
+        "id": { "json": "id" },
+        "title": { "json": "title" },
+        "user": { "json": "user.username" },
+        "gear": { "json": "gear" },
+        "format": { "json": "format" },
+        "license": { "json": "license" },
+        "url": { "template": "{home}/tones/{id}" }
+      },
+      "require": ["id", "title"],
+      "where": { "format": "^(nam|aida-x|proteus)$" },
+      "match_query": "title"
+    } ] }
+  ],
+  "open": [
+    { "get": "{home}/api/v1/models?tone_id={id}&page_size=100",
+      "items": { "json": "data" },
+      "fields": {
+        "file": { "json": "model_url" },
+        "name": { "json": "name" },
+        "size": { "json": "size" },
+        "architecture": { "json": "architecture_version" }
+      },
+      "download": "{file}" }
+  ],
+  "reader": "capture",
+  "display": {
+    "label": "{title} · {gear} · {user}",
+    "badge": "{format} · {license}"
+  }
+}

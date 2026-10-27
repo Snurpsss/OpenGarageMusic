@@ -1,0 +1,25 @@
+{
+  "name": "Dark",
+  "base": "dark",
+  "colors": {
+    "window": "#0e0f12",
+    "panel": "#121418",
+    "field": "#07080a",
+    "stripe": "#181b20",
+    "button": "#252930",
+    "button_hover": "#333843",
+    "button_active": "#444b59",
+    "border": "#2b2f37",
+    "text": "#c4c9d2",
+    "button_text": "#d8dce4",
+    "text_strong": "#ffffff",
+    "selection": "#1f5a94",
+    "selection_text": "#bcdcff",
+    "link": "#6ab0f3",
+    "outline": "#ffffff",
+    "record": "#f05a5a",
+    "warning": "#f0b04a",
+    "done": "#6fd083"
+  },
+  "tracks": ["#4fc474", "#4d9cf0", "#f0a53c", "#c66ee6", "#f0cb46", "#f06868", "#45cfcf", "#9b9ca8"]
+}

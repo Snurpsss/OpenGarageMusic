@@ -1,0 +1,14 @@
+{
+  "format_version": 1,
+  "name": "Ultimate Guitar",
+  "home": "https://www.ultimate-guitar.com",
+  "offers": {
+    "en": "Chords, text tablatures and Guitar Pro files, by its users.",
+    "fr": "Accords, tablatures en texte et fichiers Guitar Pro, par ses utilisateurs.",
+    "de": "Akkorde, Texttabulaturen und Guitar-Pro-Dateien seiner Nutzer.",
+    "es": "Acordes, tablaturas en texto y archivos Guitar Pro, de sus usuarios.",
+    "it": "Accordi, tablature in testo e file Guitar Pro, dei suoi utenti.",
+    "pt": "Acordes, tablaturas em texto e ficheiros Guitar Pro, dos seus utilizadores."
+  },
+  "open_only": true
+}

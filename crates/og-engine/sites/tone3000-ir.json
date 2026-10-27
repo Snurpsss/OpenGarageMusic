@@ -1,0 +1,86 @@
+{
+  "format_version": 3,
+  "name": "TONE3000 IR",
+  "home": "https://www.tone3000.com",
+  "gives": "impulse",
+  "offers": {
+    "en": "Impulse responses of loudspeaker cabinets and rooms shared by its users; free with an account. The program lists your favourites, the trending and the latest ones, and downloads the ones you ask for.",
+    "fr": "Réponses impulsionnelles de baffles et de salles partagées par ses utilisateurs ; gratuit avec un compte. Le programme liste vos favoris, celles du moment et les dernières, et télécharge celles que vous demandez.",
+    "de": "Impulsantworten von Lautsprecherboxen und Räumen, von seinen Nutzern geteilt; kostenlos mit einem Konto. Das Programm listet Ihre Favoriten, die angesagten und die neuesten und lädt die gewünschten herunter.",
+    "es": "Respuestas al impulso de pantallas y salas compartidas por sus usuarios; gratuito con una cuenta. El programa lista sus favoritos, las del momento y las últimas, y descarga las que usted pide.",
+    "it": "Risposte all'impulso di casse e sale condivise dai suoi utenti; gratuito con un account. Il programma elenca i vostri preferiti, quelle del momento e le ultime, e scarica quelle che chiedete.",
+    "pt": "Respostas ao impulso de caixas e salas partilhadas pelos seus utilizadores; gratuito com uma conta. O programa lista os seus favoritos, as do momento e as mais recentes, e descarrega as que pedir."
+  },
+  "headers": { "Accept": "application/json" },
+  "login": {
+    "device": "https://www.tone3000.com/api/v1/oauth/device_authorization",
+    "token": "https://www.tone3000.com/api/v1/oauth/token",
+    "client_id": "",
+    "scope": "read",
+    "keys": "https://www.tone3000.com/settings"
+  },
+  "search": [
+    { "steps": [ {
+      "get": "{home}/api/v1/tones/favorited?page_size=25",
+      "items": { "json": "data" },
+      "fields": {
+        "id": { "json": "id" },
+        "title": { "json": "title" },
+        "user": { "json": "user.username" },
+        "gear": { "json": "gear" },
+        "format": { "json": "format" },
+        "license": { "json": "license" },
+        "url": { "template": "{home}/tones/{id}" }
+      },
+      "require": ["id", "title"],
+      "where": { "format": "^ir$" },
+      "match_query": "title"
+    } ] },
+    { "steps": [ {
+      "get": "{home}/api/v1/tones/trending?page_size=25",
+      "items": { "json": "data" },
+      "fields": {
+        "id": { "json": "id" },
+        "title": { "json": "title" },
+        "user": { "json": "user.username" },
+        "gear": { "json": "gear" },
+        "format": { "json": "format" },
+        "license": { "json": "license" },
+        "url": { "template": "{home}/tones/{id}" }
+      },
+      "require": ["id", "title"],
+      "where": { "format": "^ir$" },
+      "match_query": "title"
+    } ] },
+    { "steps": [ {
+      "get": "{home}/api/v1/tones/latest?page_size=25",
+      "items": { "json": "data" },
+      "fields": {
+        "id": { "json": "id" },
+        "title": { "json": "title" },
+        "user": { "json": "user.username" },
+        "gear": { "json": "gear" },
+        "format": { "json": "format" },
+        "license": { "json": "license" },
+        "url": { "template": "{home}/tones/{id}" }
+      },
+      "require": ["id", "title"],
+      "where": { "format": "^ir$" },
+      "match_query": "title"
+    } ] }
+  ],
+  "open": [
+    { "get": "{home}/api/v1/models?tone_id={id}&page_size=100",
+      "items": { "json": "data" },
+      "fields": {
+        "file": { "json": "model_url" },
+        "name": { "json": "name" }
+      },
+      "download": "{file}" }
+  ],
+  "reader": "impulse",
+  "display": {
+    "label": "{title} · {gear} · {user}",
+    "badge": "{license}"
+  }
+}

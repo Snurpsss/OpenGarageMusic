@@ -1,0 +1,35 @@
+{
+  "format_version": 3,
+  "name": "GuitarML",
+  "home": "https://guitarml.com",
+  "gives": "capture",
+  "offers": {
+    "en": "The ToneLibrary of GuitarML: captures of amplifiers and pedals for Proteus, free and without an account, each a .json file.",
+    "fr": "La ToneLibrary de GuitarML : captures d'amplis et de pédales pour Proteus, gratuites et sans compte, chacune un fichier .json.",
+    "de": "Die ToneLibrary von GuitarML: Captures von Verstärkern und Pedalen für Proteus, kostenlos und ohne Konto, jede eine .json-Datei.",
+    "es": "La ToneLibrary de GuitarML: capturas de amplificadores y pedales para Proteus, gratuitas y sin cuenta, cada una un archivo .json.",
+    "it": "La ToneLibrary di GuitarML: catture di amplificatori e pedali per Proteus, gratuite e senza account, ciascuna un file .json.",
+    "pt": "A ToneLibrary do GuitarML: capturas de amplificadores e pedais para o Proteus, gratuitas e sem conta, cada uma um arquivo .json."
+  },
+  "search": [
+    { "steps": [ {
+      "get": "{home}/tonelibrary/tonelib-pro.html",
+      "items": { "regex": "(?s)<article.*?</article>" },
+      "fields": {
+        "url": { "regex": "href=\"(https://github\\.com/GuitarML/ToneLibrary/releases/download/[^\"]+\\.json)\"" },
+        "title": { "regex": "(?s)<h2>(.*?)</h2>", "text": true },
+        "detail": { "regex": "(?s)<p>(.*?)</p>", "text": true }
+      },
+      "require": ["url", "title"],
+      "match_query": "title"
+    } ] }
+  ],
+  "open": [
+    { "download": "{url}" }
+  ],
+  "reader": "capture",
+  "display": {
+    "label": "{title}",
+    "badge": "{detail}"
+  }
+}

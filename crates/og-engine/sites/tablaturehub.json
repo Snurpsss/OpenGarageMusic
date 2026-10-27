@@ -1,0 +1,70 @@
+{
+  "format_version": 1,
+  "name": "Tablature Hub",
+  "home": "https://www.tablatureguitare.net",
+  "offers": {
+    "en": "Guitar Pro 3 and 4 files and text tablatures, in French, free and without an account.",
+    "fr": "Fichiers Guitar Pro 3 et 4 et tablatures en texte, en français, gratuits et sans compte.",
+    "de": "Guitar-Pro-3- und -4-Dateien und Texttabulaturen, auf Französisch, kostenlos und ohne Konto.",
+    "es": "Archivos Guitar Pro 3 y 4 y tablaturas en texto, en francés, gratuitos y sin cuenta.",
+    "it": "File Guitar Pro 3 e 4 e tablature in testo, in francese, gratuiti e senza account.",
+    "pt": "Ficheiros Guitar Pro 3 e 4 e tablaturas em texto, em francês, gratuitos e sem conta."
+  },
+  "search": [
+    { "steps": [ {
+      "get": "{home}/recherche?q={query}",
+      "items": { "regex": "(?s)<a [^>]*href=\"[^\"]*/tablature-partition/[^\"/]+-tabs/[0-9]+\\.html[^\"]*\"[^>]*>.*?</a>" },
+      "fields": {
+        "id": { "regex": "/tablature-partition/[^\"/]+-tabs/([0-9]+)\\.html" },
+        "slug": { "regex": "/tablature-partition/([^\"/]+)-tabs/", "url_decode": true, "replace": [[",", " "]], "text": true },
+        "small": { "regex": "(?s)<small[^>]*>\\s*-?\\s*(.*?)</small>", "text": true },
+        "strong": { "regex": "(?s)<strong>(.*?)</strong>", "text": true },
+        "words": { "regex": "(?s)^<a [^>]*>(.*?)(?:<small|<span class=\"badge|</a>)", "text": true },
+        "badge": { "regex": "(?s)<span class=\"badge[^>]*>(.*?)</span>", "text": true, "uppercase": true },
+        "format": { "template": "{badge}", "default": "GP" },
+        "artist": { "template": "{small}", "default": "{slug}" },
+        "title": { "template": "{strong}", "default": "{words}" },
+        "url": { "template": "{home}/download.php?id={id}" }
+      },
+      "require": ["id", "title"],
+      "where": { "format": "^GP" }
+    } ] },
+    { "steps": [
+      {
+        "get": "{home}/tablature-partition/{query_letter}.html",
+        "items": { "regex": "(?s)<a [^>]*href=\"[^\"]*/tablature-partition/[^\"/]+-tabs/?\"[^>]*>.*?</a>" },
+        "fields": {
+          "slug": { "regex": "/tablature-partition/([^\"/]+)-tabs" },
+          "named": { "regex": "(?s)^<a [^>]*>(.*?)</a>", "text": true },
+          "spelled": { "template": "{slug}", "url_decode": true, "replace": [[",", " "]], "text": true },
+          "name": { "template": "{named}", "default": "{spelled}" },
+          "artist_page": { "template": "{home}/tablature-partition/{slug}-tabs" }
+        },
+        "require": ["slug"],
+        "unique": "artist_page",
+        "match_query": "name",
+        "limit": 3
+      },
+      {
+        "get": "{artist_page}",
+        "items": { "regex": "(?s)<a [^>]*href=\"[^\"]*/tablature-partition/[^\"/]+-tabs/[0-9]+\\.html[^\"]*\"[^>]*>.*?</a>" },
+        "fields": {
+          "id": { "regex": "/tablature-partition/[^\"/]+-tabs/([0-9]+)\\.html" },
+          "slug": { "regex": "/tablature-partition/([^\"/]+)-tabs/", "url_decode": true, "replace": [[",", " "]], "text": true },
+          "small": { "regex": "(?s)<small[^>]*>\\s*-?\\s*(.*?)</small>", "text": true },
+          "strong": { "regex": "(?s)<strong>(.*?)</strong>", "text": true },
+          "words": { "regex": "(?s)^<a [^>]*>(.*?)(?:<small|<span class=\"badge|</a>)", "text": true },
+          "badge": { "regex": "(?s)<span class=\"badge[^>]*>(.*?)</span>", "text": true, "uppercase": true },
+          "format": { "template": "{badge}", "default": "GP" },
+          "artist": { "template": "{small}", "default": "{slug}" },
+          "title": { "template": "{strong}", "default": "{words}" },
+          "url": { "template": "{home}/download.php?id={id}" }
+        },
+        "require": ["id", "title"],
+        "where": { "format": "^GP" }
+      }
+    ] }
+  ],
+  "open": [ { "download": "{url}" } ],
+  "reader": "guitar-pro"
+}

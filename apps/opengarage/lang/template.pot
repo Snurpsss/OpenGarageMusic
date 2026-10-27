@@ -1,0 +1,4385 @@
+# Translation template of OpenGarageMusic.
+# Copy this file to <language code>.po, fill in each msgstr, and put the
+# file in the "lang" folder: the language then appears in the menu.
+msgid ""
+msgstr ""
+"Project-Id-Version: OpenGarageMusic\n"
+"Language: \n"
+"X-Language-Name: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+
+# app.rs
+
+msgid "C"
+msgstr ""
+
+msgid "C#"
+msgstr ""
+
+msgid "D"
+msgstr ""
+
+msgid "Eb"
+msgstr ""
+
+msgid "E"
+msgstr ""
+
+msgid "F"
+msgstr ""
+
+msgid "F#"
+msgstr ""
+
+msgid "G"
+msgstr ""
+
+msgid "Ab"
+msgstr ""
+
+msgid "A"
+msgstr ""
+
+msgid "Bb"
+msgstr ""
+
+msgid "B"
+msgstr ""
+
+msgid "Sound"
+msgstr ""
+
+msgid "Arpeggiator"
+msgstr ""
+
+msgid "Amp"
+msgstr ""
+
+msgid "Pedals"
+msgstr ""
+
+msgid "External plug-ins (CLAP, LV2)"
+msgstr ""
+
+msgid "Equaliser"
+msgstr ""
+
+msgid "Dynamics and space"
+msgstr ""
+
+msgid "Master output (all tracks)"
+msgstr ""
+
+msgid "My sounds"
+msgstr ""
+
+msgid "Demonstration project loaded. Space: play."
+msgstr ""
+
+msgid "Plug-in window: {e}"
+msgstr ""
+
+msgid "Plug-in “{}” unavailable: {e}"
+msgstr ""
+
+msgid "Plug-in refused: {e}"
+msgstr ""
+
+msgid "Folder of the LV2 plug-in (ends with .lv2)"
+msgstr ""
+
+msgid "LV2 plug-in added to the installed effects: {}."
+msgstr ""
+
+msgid "CLAP plug-in"
+msgstr ""
+
+msgid "Plug-in added to the list of installed effects."
+msgstr ""
+
+msgid "An external instrument goes on a software instrument track."
+msgstr ""
+
+msgid "Plug-in “{}” added to the track."
+msgstr ""
+
+msgid "“{}” is hidden. Right-click the background of the controls to show it again."
+msgstr ""
+
+msgid "Bank"
+msgstr ""
+
+msgid "Preset {bank}:{preset}"
+msgstr ""
+
+msgid "Sound bank (SF2, SF3, SFZ)"
+msgstr ""
+
+msgid "Sound bank loaded: {count} instruments added to the library."
+msgstr ""
+
+msgid "Import failed: {e}"
+msgstr ""
+
+msgid "“{}”: {} plug-in(s) installed ({}). Add them to a track from the sound controls, “Add a plug-in…”."
+msgstr ""
+
+msgid "“{}” was downloaded but cannot be read: {}"
+msgstr ""
+
+msgid "“{}”: {instruments} instruments added to the library."
+msgstr ""
+
+msgid "“{}”: {e}"
+msgstr ""
+
+msgid "Cannot open: {e}"
+msgstr ""
+
+msgid "Settings not saved: {e}"
+msgstr ""
+
+msgid "This track is locked."
+msgstr ""
+
+msgid "Drummer tracks cannot be recorded: set the drummer in the editor."
+msgstr ""
+
+msgid "Cannot record: {e}"
+msgstr ""
+
+msgid "Recording… (Space or R to stop)"
+msgstr ""
+
+msgid "Nothing was recorded."
+msgstr ""
+
+msgid "Take"
+msgstr ""
+
+msgid "The take could not be written to disk: {e}"
+msgstr ""
+
+msgid "{count} takes recorded; the last one is selected (choose in the editor)."
+msgstr ""
+
+msgid "Take of {seconds:.1} s recorded."
+msgstr ""
+
+msgid "No note was played during the recording."
+msgstr ""
+
+msgid "Recording"
+msgstr ""
+
+msgid "{count} notes recorded."
+msgstr ""
+
+msgid "The audio file of this region cannot be found."
+msgstr ""
+
+msgid "Snapped"
+msgstr ""
+
+msgid "Timing corrected onto the grid (Ctrl+Z to go back)."
+msgstr ""
+
+msgid "Correction failed: {e}"
+msgstr ""
+
+msgid "Audio"
+msgstr ""
+
+msgid "No effect"
+msgstr ""
+
+msgid "Imported audio file."
+msgstr ""
+
+msgid "MIDI file"
+msgstr ""
+
+msgid "This MIDI file holds no notes."
+msgstr ""
+
+msgid "MIDI {}"
+msgstr ""
+
+msgid "{count} tracks imported."
+msgstr ""
+
+msgid "OpenGarageMusic project"
+msgstr ""
+
+msgid "Project saved: {}"
+msgstr ""
+
+msgid "Saving failed: {e}"
+msgstr ""
+
+msgid "Cannot open {}: {e}"
+msgstr ""
+
+msgid "Project opened: {}"
+msgstr ""
+
+msgid "Project opened, but {} audio file(s) cannot be found: {}"
+msgstr ""
+
+msgid "Export finished: {}"
+msgstr ""
+
+msgid "Export failed: {e}"
+msgstr ""
+
+msgid "WAV audio"
+msgstr ""
+
+msgid "Track {}"
+msgstr ""
+
+msgid "Natural voice"
+msgstr ""
+
+msgid "Guitar"
+msgstr ""
+
+msgid "Clean amp"
+msgstr ""
+
+msgid "Drummer"
+msgstr ""
+
+msgid "Drums"
+msgstr ""
+
+msgid "{} (copy)"
+msgstr ""
+
+msgid "Region copied."
+msgstr ""
+
+msgid "This region cannot be pasted on this kind of track."
+msgstr ""
+
+msgid "Put the playhead inside the selected region."
+msgstr ""
+
+msgid "Stop looping this region first."
+msgstr ""
+
+msgid "Joining needs two note regions on the same track."
+msgstr ""
+
+msgid "Loop “{name}” added. Drag the top of its right edge to repeat it."
+msgstr ""
+
+msgid "Cannot listen to the input: {e}"
+msgstr ""
+
+# audio.rs
+
+msgid "no audio output found"
+msgstr ""
+
+msgid "unsupported output format ({:?})"
+msgstr ""
+
+msgid "no audio input found"
+msgstr ""
+
+msgid "unsupported input format ({other:?})"
+msgstr ""
+
+msgid "MIDI keyboard"
+msgstr ""
+
+# clap_host.rs
+
+msgid "invalid path"
+msgstr ""
+
+msgid "unreadable file ({e})"
+msgstr ""
+
+msgid "this file is not a CLAP plug-in"
+msgstr ""
+
+msgid "invalid CLAP plug-in"
+msgstr ""
+
+msgid "unsupported CLAP version"
+msgstr ""
+
+msgid "the plug-in refused to start"
+msgstr ""
+
+msgid "this file holds no plug-in"
+msgstr ""
+
+msgid "the plug-in is not in this file"
+msgstr ""
+
+msgid "invalid plug-in identifier"
+msgstr ""
+
+msgid "the plug-in could not be created"
+msgstr ""
+
+msgid "the plug-in refused to initialise"
+msgstr ""
+
+msgid "this plug-in has no audio output"
+msgstr ""
+
+msgid "the plug-in refused to activate"
+msgstr ""
+
+msgid "this plug-in has no window that can be used here"
+msgstr ""
+
+msgid "the plug-in could not create its window"
+msgstr ""
+
+msgid "the plug-in refused the window offered"
+msgstr ""
+
+msgid "the plug-in window could not be created"
+msgstr ""
+
+msgid "plug-in windows are only available on Windows for now"
+msgstr ""
+
+# downloads.rs
+
+msgid "Banks"
+msgstr ""
+
+msgid "Effects"
+msgstr ""
+
+msgid "Four reverbs: hall, room, plate, early reflections"
+msgstr ""
+
+msgid "Distortion with a drawn curve"
+msgstr ""
+
+msgid "Instrument: FM synthesizer"
+msgstr ""
+
+msgid "Instrument: six-operator FM synthesizer"
+msgstr ""
+
+msgid "Instrument: synthesizer, with its effects as a separate plug-in"
+msgstr ""
+
+msgid "Free projects (GitHub)"
+msgstr ""
+
+msgid "Plug-ins in the CLAP format whose code is free, published by their authors on GitHub. The latest version for Windows is offered. A plug-in is a program: it runs inside the application with your rights."
+msgstr ""
+
+msgid "Free plug-ins in the LV2 format (equaliser, limiter, compressor, automatic tuning…), distributed by their author as installers. Install them from the site: those in the standard Windows LV2 folder then appear in “Installed effects”. Their windows are not shown, only their settings are."
+msgstr ""
+
+msgid "A directory of CLAP plug-ins, free or commercial. Download the plug-in there, then add its .clap file with “Import a plug-in”."
+msgstr ""
+
+msgid "A list of several hundred open-source audio programs. This site only holds links: each project publishes its files its own way. Choose a project: the application then checks its licence and looks, in its latest version, for a Windows archive. Many exist only as VST or as an installer and cannot be installed from here."
+msgstr ""
+
+msgid "The General MIDI banks of the free score editor MuseScore, under the MIT licence."
+msgstr ""
+
+msgid "A community repository where each file carries its licence. Only those declared under a free licence are listed; the licence is declared by the person who uploaded the file."
+msgstr ""
+
+msgid "A collection of SFZ instruments hosted on GitHub. Only repositories that declare a free licence are listed."
+msgstr ""
+
+msgid "Each bank has its own terms and the download goes through the site. Download the file there, then import it with “Import a sound bank”."
+msgstr ""
+
+msgid "Free banks distributed as archives that the application cannot open yet. Download them from the site, unpack them, then import the .sf2 or .sfz file."
+msgstr ""
+
+msgid "{description}. Version {version}."
+msgstr ""
+
+msgid "Instrument"
+msgstr ""
+
+msgid "Effect"
+msgstr ""
+
+msgid "Miscellaneous"
+msgstr ""
+
+msgid "to be checked"
+msgstr ""
+
+msgid "this project is not hosted on GitHub"
+msgstr ""
+
+msgid "unreadable answer from GitHub"
+msgstr ""
+
+msgid "this project declares no recognised licence: nothing is downloaded from here. See its page."
+msgstr ""
+
+msgid "the licence of this project ({license}) is not in the list of accepted free licences."
+msgstr ""
+
+msgid "the latest version of this project has no .zip archive for 64-bit Windows (installer, other system or other format only). Download it from its page, then use “Import a plug-in”."
+msgstr ""
+
+msgid " The archive is not guaranteed to hold a CLAP plug-in: that is checked after the download."
+msgstr ""
+
+msgid "GitHub limits anonymous requests (60 per hour): try again later."
+msgstr ""
+
+msgid "this project no longer exists at this address."
+msgstr ""
+
+msgid "this project publishes no version to download: it has to be built from source."
+msgstr ""
+
+msgid "Frank Wen; adaptations by Michael Cowgill and S. Christian Collins"
+msgstr ""
+
+msgid "Pianos, strings, brass, guitars, drums. The bank best rendered by the OpenGarageMusic player."
+msgstr ""
+
+msgid "Lighter, but its grand pianos come out too quiet with the current player."
+msgstr ""
+
+msgid "{license} (as declared by the uploader)"
+msgstr ""
+
+msgid "SFZ instrument; some use settings that the player ignores."
+msgstr ""
+
+msgid "secure connection unavailable: {e}"
+msgstr ""
+
+msgid "the site did not answer ({e})"
+msgstr ""
+
+msgid "unreadable answer ({e})"
+msgstr ""
+
+msgid "unreadable archive ({e})"
+msgstr ""
+
+msgid "abnormally large archive"
+msgstr ""
+
+msgid "the archive is too large once unpacked"
+msgstr ""
+
+msgid "only secure downloads (https) are accepted"
+msgstr ""
+
+msgid "Downloading"
+msgstr ""
+
+msgid "the download failed ({e})"
+msgstr ""
+
+msgid "download cancelled"
+msgstr ""
+
+msgid "the connection was cut ({e})"
+msgstr ""
+
+msgid "cannot write ({e})"
+msgstr ""
+
+msgid "abnormally large file"
+msgstr ""
+
+msgid "the file received is incomplete"
+msgstr ""
+
+msgid "the file received does not match the fingerprint announced by the site"
+msgstr ""
+
+msgid "Unpacking"
+msgstr ""
+
+msgid "Name: {}\nAuthor: {}\nLicence: {}\nSite: {}\nPage: {}\nDownloaded from: {}\nDate (Unix seconds): {stamp}\nSHA-256 of the downloaded file: {digest}\n"
+msgstr ""
+
+msgid "not given"
+msgstr ""
+
+msgid "the download holds no SF2, SF3 or SFZ bank"
+msgstr ""
+
+msgid "the download holds no CLAP plug-in (this project may only provide other formats)"
+msgstr ""
+
+# export.rs
+
+msgid "unsupported sample rate"
+msgstr ""
+
+msgid "there is nothing to export"
+msgstr ""
+
+msgid "{} export is only available on Windows for now"
+msgstr ""
+
+msgid "the encoder stopped unexpectedly"
+msgstr ""
+
+msgid "{} encoding failed: {e}"
+msgstr ""
+
+msgid "output stream: {}"
+msgstr ""
+
+msgid "input format: {}"
+msgstr ""
+
+# lv2_host.rs
+
+msgid "the description file is too large"
+msgstr ""
+
+msgid "{}: unreadable description"
+msgstr ""
+
+msgid "this folder is not an LV2 plug-in ({e})"
+msgstr ""
+
+msgid "this folder does not describe any LV2 plug-in"
+msgstr ""
+
+msgid "the plug-in is not in this folder"
+msgstr ""
+
+msgid "this plug-in requires a feature the host does not offer: {missing}"
+msgstr ""
+
+msgid "the description does not name the plug-in's program"
+msgstr ""
+
+msgid "the plug-in's program must be inside its folder"
+msgstr ""
+
+msgid "the description of the plug-in's ports is inconsistent"
+msgstr ""
+
+msgid "a port of the plug-in is neither an input nor an output"
+msgstr ""
+
+msgid "the plug-in has a port of a type the host does not know"
+msgstr ""
+
+msgid "invalid plug-in address"
+msgstr ""
+
+msgid "unreadable plug-in program ({e})"
+msgstr ""
+
+msgid "this program is not an LV2 plug-in"
+msgstr ""
+
+msgid "the program does not contain this plug-in"
+msgstr ""
+
+msgid "invalid LV2 plug-in"
+msgstr ""
+
+# ui_bottom.rs
+
+msgid "Kick"
+msgstr ""
+
+msgid "Rim"
+msgstr ""
+
+msgid "Snare"
+msgstr ""
+
+msgid "Clap"
+msgstr ""
+
+msgid "Low tom"
+msgstr ""
+
+msgid "Closed hat"
+msgstr ""
+
+msgid "Mid tom"
+msgstr ""
+
+msgid "Open hat"
+msgstr ""
+
+msgid "High tom"
+msgstr ""
+
+msgid "Crash"
+msgstr ""
+
+msgid "Ride"
+msgstr ""
+
+msgid "Tambourine"
+msgstr ""
+
+msgid "Bell"
+msgstr ""
+
+msgid "Shaker"
+msgstr ""
+
+msgid "Hide"
+msgstr ""
+
+msgid "Move left"
+msgstr ""
+
+msgid "Move right"
+msgstr ""
+
+msgid "To show a hidden panel again:\nright-click the background of the controls."
+msgstr ""
+
+msgid "Drag onto another panel to move it · right-click to hide it"
+msgstr ""
+
+msgid "Sound controls"
+msgstr ""
+
+msgid "Editor"
+msgstr ""
+
+msgid "Track: {}  ·  {}"
+msgstr ""
+
+msgid "Select a track."
+msgstr ""
+
+msgid "No panel is hidden."
+msgstr ""
+
+msgid "Right-click a panel to hide it."
+msgstr ""
+
+msgid "Hidden panels"
+msgstr ""
+
+msgid "Show “{}”"
+msgstr ""
+
+msgid "Show all"
+msgstr ""
+
+msgid "Every panel is hidden: right-click here to show them again."
+msgstr ""
+
+msgid "{} hidden: right-click the background"
+msgstr ""
+
+msgid "Sine"
+msgstr ""
+
+msgid "Saw"
+msgstr ""
+
+msgid "Square"
+msgstr ""
+
+msgid "Triangle"
+msgstr ""
+
+msgid "Listen"
+msgstr ""
+
+msgid "Attack"
+msgstr ""
+
+msgid "Decay"
+msgstr ""
+
+msgid "Sustain"
+msgstr ""
+
+msgid "Release"
+msgstr ""
+
+msgid "Filter"
+msgstr ""
+
+msgid "Filter env."
+msgstr ""
+
+msgid "Detune"
+msgstr ""
+
+msgid "Sub"
+msgstr ""
+
+msgid "Vibrato"
+msgstr ""
+
+msgid "Level"
+msgstr ""
+
+msgid "Brightness"
+msgstr ""
+
+msgid "Hold"
+msgstr ""
+
+msgid "Acoustic"
+msgstr ""
+
+msgid "Electro"
+msgstr ""
+
+msgid "Hip-hop"
+msgstr ""
+
+msgid "Tune"
+msgstr ""
+
+msgid "Length"
+msgstr ""
+
+msgid "Sampled instrument"
+msgstr ""
+
+msgid "On"
+msgstr ""
+
+msgid "Up"
+msgstr ""
+
+msgid "Down"
+msgstr ""
+
+msgid "Up and down"
+msgstr ""
+
+msgid "Random"
+msgstr ""
+
+msgid " octave(s)"
+msgstr ""
+
+msgid "Clean"
+msgstr ""
+
+msgid "Crunch"
+msgstr ""
+
+msgid "Lead"
+msgstr ""
+
+msgid "Bass"
+msgstr ""
+
+msgid "Gain"
+msgstr ""
+
+msgid "Lows"
+msgstr ""
+
+msgid "Mids"
+msgstr ""
+
+msgid "Highs"
+msgstr ""
+
+msgid "Presence"
+msgstr ""
+
+msgid "Volume"
+msgstr ""
+
+msgid "Tone"
+msgstr ""
+
+msgid "Duration"
+msgstr ""
+
+msgid "Depth"
+msgstr ""
+
+msgid "Speed"
+msgstr ""
+
+msgid "Intensity"
+msgstr ""
+
+msgid "Earlier in the chain"
+msgstr ""
+
+msgid "Later in the chain"
+msgstr ""
+
+msgid "Remove"
+msgstr ""
+
+msgid "Add"
+msgstr ""
+
+msgid "Close the plug-in window"
+msgstr ""
+
+msgid "Open the plug-in window"
+msgstr ""
+
+msgid "Plug-in not loaded"
+msgstr ""
+
+msgid "… and {} more settings"
+msgstr ""
+
+msgid "Add a plug-in…"
+msgstr ""
+
+msgid "Effect or instrument in the CLAP or LV2 format"
+msgstr ""
+
+msgid "Effects: every track."
+msgstr ""
+
+msgid "Instruments: instrument tracks."
+msgstr ""
+
+msgid "Lows dB"
+msgstr ""
+
+msgid "Mids dB"
+msgstr ""
+
+msgid "Freq. Hz"
+msgstr ""
+
+msgid "Highs dB"
+msgstr ""
+
+msgid "Compressor"
+msgstr ""
+
+msgid "Echo"
+msgstr ""
+
+msgid "Reverb"
+msgstr ""
+
+msgid "Limiter"
+msgstr ""
+
+msgid "Echo: time"
+msgstr ""
+
+msgid "Echo: repeats"
+msgstr ""
+
+msgid "Reverb size"
+msgstr ""
+
+msgid "Reverb damping"
+msgstr ""
+
+msgid "Save this sound…"
+msgstr ""
+
+msgid "Adds it to “My sounds” in the library"
+msgstr ""
+
+msgid "Notes"
+msgstr ""
+
+msgid "Score"
+msgstr ""
+
+msgid "New notes"
+msgstr ""
+
+msgid "Quantize"
+msgstr ""
+
+msgid "Snaps the selected notes (or all of them) onto the chosen grid"
+msgstr ""
+
+msgid "Transpose"
+msgstr ""
+
+msgid "Velocity"
+msgstr ""
+
+msgid "Select notes to set their velocity"
+msgstr ""
+
+msgid "Click: add · drag: move · right-click: delete · Shift and a click: choose beats to loop"
+msgstr ""
+
+msgid "Takes ({})"
+msgstr ""
+
+msgid "Choose the take to hear"
+msgstr ""
+
+msgid "Other take {}"
+msgstr ""
+
+msgid "Transposition "
+msgstr ""
+
+msgid " semitones"
+msgstr ""
+
+msgid "Changes the pitch without changing the length"
+msgstr ""
+
+msgid "Tuning %"
+msgstr ""
+
+msgid "Brings each note closer to the nearest note in tune"
+msgstr ""
+
+msgid "Snap to grid"
+msgstr ""
+
+msgid "Moves each attack onto the chosen grid"
+msgstr ""
+
+msgid "Play backwards"
+msgstr ""
+
+msgid "Start at "
+msgstr ""
+
+msgid "Stop looping"
+msgstr ""
+
+msgid "Loop region"
+msgstr ""
+
+msgid "File of {seconds:.1} s"
+msgstr ""
+
+msgid "Style"
+msgstr ""
+
+msgid "Playing"
+msgstr ""
+
+msgid "Drag the dot: simple to complex, soft to loud"
+msgstr ""
+
+msgid "Simple"
+msgstr ""
+
+msgid "Complex"
+msgstr ""
+
+msgid "Loud"
+msgstr ""
+
+msgid "Kit pieces"
+msgstr ""
+
+msgid "Kick and snare"
+msgstr ""
+
+msgid "Hi-hat"
+msgstr ""
+
+msgid "Toms"
+msgstr ""
+
+msgid "None"
+msgstr ""
+
+msgid "No percussion"
+msgstr ""
+
+msgid "Claps"
+msgstr ""
+
+msgid "Fills"
+msgstr ""
+
+msgid "Swing"
+msgstr ""
+
+msgid "Other variation"
+msgstr ""
+
+msgid "Plays the same idea differently"
+msgstr ""
+
+msgid "Kit"
+msgstr ""
+
+# ui_downloads.rs
+
+msgid "{:.1} GB"
+msgstr ""
+
+msgid "{:.0} MB"
+msgstr ""
+
+msgid "Sound banks"
+msgstr ""
+
+msgid "Effects and instruments (plug-ins)"
+msgstr ""
+
+msgid "Folder: {}"
+msgstr ""
+
+msgid "Open"
+msgstr ""
+
+msgid "Sites"
+msgstr ""
+
+msgid "Open the site in the browser"
+msgstr ""
+
+msgid "Available under a free licence"
+msgstr ""
+
+msgid "Search"
+msgstr ""
+
+msgid "Find"
+msgstr ""
+
+msgid "The application does not download directly from this site: see the explanation on the left."
+msgstr ""
+
+msgid "Asking the site…"
+msgstr ""
+
+msgid "List unavailable: {error}"
+msgstr ""
+
+msgid "Retry"
+msgstr ""
+
+msgid "Nothing matches under a free licence."
+msgstr ""
+
+msgid "Already downloaded"
+msgstr ""
+
+msgid "Filing in the library"
+msgstr ""
+
+msgid "By instrument family (keyboards, basses, strings…)"
+msgstr ""
+
+msgid "For General MIDI banks: each instrument joins the section of its family"
+msgstr ""
+
+msgid "In a section named after the bank"
+msgstr ""
+
+msgid "Everything in one section:"
+msgstr ""
+
+msgid "Filing"
+msgstr ""
+
+msgid "List of installed effects: the plug-in becomes available in “Add a plug-in…”, for every track (instruments: for instrument tracks)."
+msgstr ""
+
+msgid "A plug-in is a program. It is neither checked nor isolated: it runs inside the application with your rights, and a faulty plug-in can crash it."
+msgstr ""
+
+msgid "Choose an item in the middle list."
+msgstr ""
+
+msgid "Author: {}"
+msgstr ""
+
+msgid "Licence: {}"
+msgstr ""
+
+msgid "Size: about {}"
+msgstr ""
+
+msgid "Size: unknown before the download"
+msgstr ""
+
+msgid "See the page of this item"
+msgstr ""
+
+msgid "✔ Already downloaded"
+msgstr ""
+
+msgid "Open its folder"
+msgstr ""
+
+msgid "Checking the licence and the published files…"
+msgstr ""
+
+msgid "Direct download not possible: {reason}"
+msgstr ""
+
+msgid "Check again"
+msgstr ""
+
+msgid "{stage}: {}"
+msgstr ""
+
+msgid "{} of {}"
+msgstr ""
+
+msgid "Cancel"
+msgstr ""
+
+msgid "Download again"
+msgstr ""
+
+msgid "Download and add to the library"
+msgstr ""
+
+msgid "Download and install"
+msgstr ""
+
+msgid "I trust the author of this plug-in"
+msgstr ""
+
+# ui_side.rs
+
+msgid "Library"
+msgstr ""
+
+msgid "Select a track to choose its sound."
+msgstr ""
+
+msgid "Sounds for: {}"
+msgstr ""
+
+msgid "Search for a sound"
+msgstr ""
+
+msgid "Real instruments: Library menu, “Download sounds”."
+msgstr ""
+
+msgid "Track locked."
+msgstr ""
+
+msgid "No sound here yet."
+msgstr ""
+
+msgid "No sound matches."
+msgstr ""
+
+msgid "Delete from “My sounds”"
+msgstr ""
+
+msgid "Loops"
+msgstr ""
+
+msgid "They follow the tempo and the key of the project."
+msgstr ""
+
+msgid "Search for a loop"
+msgstr ""
+
+msgid "Genre"
+msgstr ""
+
+msgid "Mood"
+msgstr ""
+
+msgid "My favourites only"
+msgstr ""
+
+msgid "No loop matches these criteria."
+msgstr ""
+
+msgid "Stop"
+msgstr ""
+
+msgid "{bars} bars"
+msgstr ""
+
+msgid "Puts the loop at the playhead"
+msgstr ""
+
+msgid "Favourite"
+msgstr ""
+
+# ui_top.rs
+
+msgid "File"
+msgstr ""
+
+msgid "New…"
+msgstr ""
+
+msgid "Open…"
+msgstr ""
+
+msgid "Save        Ctrl+S"
+msgstr ""
+
+msgid "Save as…"
+msgstr ""
+
+msgid "Import an audio file (WAV, MP3, AAC)…"
+msgstr ""
+
+msgid "Import a sound bank (.sf2, .sf3, .sfz)…"
+msgstr ""
+
+msgid "Adds its sampled instruments to the library"
+msgstr ""
+
+msgid "Import a MIDI file…"
+msgstr ""
+
+msgid "Export the song as {bits}-bit WAV…"
+msgstr ""
+
+msgid "Export the song as {} (.{})…"
+msgstr ""
+
+msgid "Edit"
+msgstr ""
+
+msgid "Undo        Ctrl+Z"
+msgstr ""
+
+msgid "Redo        Ctrl+Y"
+msgstr ""
+
+msgid "Cut        Ctrl+X"
+msgstr ""
+
+msgid "Copy        Ctrl+C"
+msgstr ""
+
+msgid "Paste at the playhead        Ctrl+V"
+msgstr ""
+
+msgid "Delete        Del"
+msgstr ""
+
+msgid "Split at the playhead        Ctrl+T"
+msgstr ""
+
+msgid "Join with the next region        Ctrl+J"
+msgstr ""
+
+msgid "Loop / stop looping        L"
+msgstr ""
+
+msgid "Track"
+msgstr ""
+
+msgid "New track…"
+msgstr ""
+
+msgid "Duplicate track"
+msgstr ""
+
+msgid "Delete track"
+msgstr ""
+
+msgid "Move track up"
+msgstr ""
+
+msgid "Move track down"
+msgstr ""
+
+msgid "Lock track"
+msgstr ""
+
+msgid "Project"
+msgstr ""
+
+msgid "Time signature"
+msgstr ""
+
+msgid "End of the project: after the last region"
+msgstr ""
+
+msgid "End at bar"
+msgstr ""
+
+msgid "One bar of count-in before recording"
+msgstr ""
+
+msgid "Metronome        K"
+msgstr ""
+
+msgid "View"
+msgstr ""
+
+msgid "Library        Y"
+msgstr ""
+
+msgid "Sound controls        B"
+msgstr ""
+
+msgid "Editor        E"
+msgstr ""
+
+msgid "Loops        O"
+msgstr ""
+
+msgid "Notepad"
+msgstr ""
+
+msgid "Arrangement, tempo and transposition tracks"
+msgstr ""
+
+msgid "Master track"
+msgstr ""
+
+msgid "Automation        A"
+msgstr ""
+
+msgid "Play on the computer keyboard        Ctrl+K"
+msgstr ""
+
+msgid "Download sounds…"
+msgstr ""
+
+msgid "Freely licensed sound banks, from sites that distribute them"
+msgstr ""
+
+msgid "Download effects (plug-ins)…"
+msgstr ""
+
+msgid "Free CLAP plug-ins: effects and instruments"
+msgstr ""
+
+msgid "Import a CLAP plug-in (.clap file)…"
+msgstr ""
+
+msgid "Import an LV2 plug-in (.lv2 folder)…"
+msgstr ""
+
+msgid "Installed effects…"
+msgstr ""
+
+msgid "Add an installed plug-in to the selected track"
+msgstr ""
+
+msgid "Open the sound banks folder"
+msgstr ""
+
+msgid "Open the effects folder"
+msgstr ""
+
+msgid "Help"
+msgstr ""
+
+msgid "Space: play / stop        Enter: back to the start"
+msgstr ""
+
+msgid "R: record        C: loop        K: metronome"
+msgstr ""
+
+msgid "Double-click in a track: new region"
+msgstr ""
+
+msgid "Right edge of a region, bottom: length; top: looping"
+msgstr ""
+
+msgid "Click in the upper half of the ruler, then drag: loop area"
+msgstr ""
+
+msgid "Ctrl + wheel: zoom        Shift + wheel: scroll"
+msgstr ""
+
+msgid "Editor: click = note, drag in empty space = selection, right-click = delete"
+msgstr ""
+
+msgid "Settings"
+msgstr ""
+
+msgid "Start"
+msgstr ""
+
+msgid "Back to the start (Enter)"
+msgstr ""
+
+msgid "Play"
+msgstr ""
+
+msgid "Play / stop (Space)"
+msgstr ""
+
+msgid "Rec"
+msgstr ""
+
+msgid "Record on the selected track (R)"
+msgstr ""
+
+msgid "Loop"
+msgstr ""
+
+msgid "Repeat the loop area (C)"
+msgstr ""
+
+msgid "Bar.beat"
+msgstr ""
+
+msgid "Tempo"
+msgstr ""
+
+msgid "Time signature (Project menu)"
+msgstr ""
+
+msgid "Key (Project menu)"
+msgstr ""
+
+msgid "Metronome"
+msgstr ""
+
+msgid "Count-in"
+msgstr ""
+
+msgid "One bar of metronome before recording"
+msgstr ""
+
+msgid "Tuner"
+msgstr ""
+
+msgid "Tuner: {e}"
+msgstr ""
+
+msgid "Keyboard"
+msgstr ""
+
+msgid "Play with the computer keyboard (Ctrl+K)"
+msgstr ""
+
+msgid "octave "
+msgstr ""
+
+msgid "Output level"
+msgstr ""
+
+msgid "Master volume"
+msgstr ""
+
+msgid "Loading sound banks…"
+msgstr ""
+
+msgid "No sound: {error}"
+msgstr ""
+
+msgid "Audio output {} Hz"
+msgstr ""
+
+msgid "MIDI keyboard: {name}  ·"
+msgstr ""
+
+msgid "Free text saved with the project."
+msgstr ""
+
+msgid "New project"
+msgstr ""
+
+msgid "Choose a starting point:"
+msgstr ""
+
+msgid "New project: {}."
+msgstr ""
+
+msgid "New track"
+msgstr ""
+
+msgid "Sounds played on the keyboard, written note by note or coming from loops."
+msgstr ""
+
+msgid "Recording from a microphone or a line input, or an imported audio file."
+msgstr ""
+
+msgid "A plugged-in guitar or bass, with an amp and effect pedals."
+msgstr ""
+
+msgid "A virtual drummer that plays by itself, following your settings."
+msgstr ""
+
+msgid "No audio input available."
+msgstr ""
+
+msgid "Play a single note"
+msgstr ""
+
+msgid "In tune"
+msgstr ""
+
+msgid "{:.0} cents flat"
+msgstr ""
+
+msgid "{cents:.0} cents sharp"
+msgstr ""
+
+msgid "Input level"
+msgstr ""
+
+msgid "Installed effects and instruments"
+msgstr ""
+
+msgid "No CLAP or LV2 plug-in is installed yet."
+msgstr ""
+
+msgid "Choose a plug-in to add it to the selected track."
+msgstr ""
+
+msgid "Import a .clap file…"
+msgstr ""
+
+msgid "Import a .lv2 folder…"
+msgstr ""
+
+msgid "Download effects…"
+msgstr ""
+
+msgid "A plug-in is a program: only add those whose origin you know."
+msgstr ""
+
+msgid "Download sounds and effects"
+msgstr ""
+
+msgid "Choose a plug-in"
+msgstr ""
+
+msgid "This file holds several plug-ins:"
+msgstr ""
+
+msgid "Save this sound"
+msgstr ""
+
+msgid "Name of the sound:"
+msgstr ""
+
+msgid "Save to “My sounds”"
+msgstr ""
+
+msgid "Sound saved to “My sounds”."
+msgstr ""
+
+# ui_tracks.rs
+
+msgid "Instr."
+msgstr ""
+
+msgid "+ Track"
+msgstr ""
+
+msgid "Zoom"
+msgstr ""
+
+msgid "Pan"
+msgstr ""
+
+msgid "Arrangement"
+msgstr ""
+
+msgid "double-click: section; moving it moves its contents"
+msgstr ""
+
+msgid "Transposition"
+msgstr ""
+
+msgid "click: point"
+msgstr ""
+
+msgid "No track. Click “+ Track” to begin."
+msgstr ""
+
+msgid "Section {}"
+msgstr ""
+
+msgid "Double-click to add a section."
+msgstr ""
+
+msgid "Section name"
+msgstr ""
+
+msgid "Intro"
+msgstr ""
+
+msgid "Verse"
+msgstr ""
+
+msgid "Refrain"
+msgstr ""
+
+msgid "Bridge"
+msgstr ""
+
+msgid "Outro"
+msgstr ""
+
+msgid "Repeat the section right after"
+msgstr ""
+
+msgid "Delete the marker only"
+msgstr ""
+
+msgid "Delete the section and its contents"
+msgstr ""
+
+msgid "{label} · click: choose the colour of the track"
+msgstr ""
+
+msgid "Mute"
+msgstr ""
+
+msgid "Solo"
+msgstr ""
+
+msgid "L"
+msgstr ""
+
+msgid "I"
+msgstr ""
+
+msgid "Listen to the input through the track's effects (on headphones, to avoid feedback)"
+msgstr ""
+
+msgid "Sound…"
+msgstr ""
+
+msgid "Choose a sound in the library"
+msgstr ""
+
+msgid "Pan (-1 left, 1 right)"
+msgstr ""
+
+msgid "Move up"
+msgstr ""
+
+msgid "Move down"
+msgstr ""
+
+msgid "audio file not found"
+msgstr ""
+
+msgid "(volume)"
+msgstr ""
+
+msgid "(pan)"
+msgstr ""
+
+msgid "Drag to loop"
+msgstr ""
+
+msgid "Region {}"
+msgstr ""
+
+msgid "Audio track: record (R) or import a file (File menu)."
+msgstr ""
+
+msgid "Paste at the playhead"
+msgstr ""
+
+msgid "Cut"
+msgstr ""
+
+msgid "Copy"
+msgstr ""
+
+msgid "Split at the playhead"
+msgstr ""
+
+msgid "Join with the next region"
+msgstr ""
+
+msgid "Delete"
+msgstr ""
+
+# codec.rs
+
+msgid "unsupported audio format ({e})"
+msgstr ""
+
+msgid "this file holds no audio track"
+msgstr ""
+
+msgid "no sound could be read from this file"
+msgstr ""
+
+# loops.rs
+
+msgid "Keyboards"
+msgstr ""
+
+msgid "Synth"
+msgstr ""
+
+msgid "Rock"
+msgstr ""
+
+msgid "Pop"
+msgstr ""
+
+msgid "Funk"
+msgstr ""
+
+msgid "Jazz & Latin"
+msgstr ""
+
+msgid "Calm"
+msgstr ""
+
+msgid "Intense"
+msgstr ""
+
+msgid "Happy"
+msgstr ""
+
+msgid "Dark"
+msgstr ""
+
+msgid "Straight rock"
+msgstr ""
+
+msgid "Acoustic kit"
+msgstr ""
+
+msgid "Edgy rock"
+msgstr ""
+
+msgid "Tom rock"
+msgstr ""
+
+msgid "Light pop"
+msgstr ""
+
+msgid "Dance pop"
+msgstr ""
+
+msgid "Electro kit"
+msgstr ""
+
+msgid "Heavy hip-hop"
+msgstr ""
+
+msgid "Hip-hop kit"
+msgstr ""
+
+msgid "Bouncy hip-hop"
+msgstr ""
+
+msgid "Four-on-the-floor electro"
+msgstr ""
+
+msgid "Busy electro"
+msgstr ""
+
+msgid "Tight funk"
+msgstr ""
+
+msgid "Jazz on the ride"
+msgstr ""
+
+msgid "Latin clave"
+msgstr ""
+
+msgid "Shaker only"
+msgstr ""
+
+msgid "Tambourine only"
+msgstr ""
+
+msgid "Root-note bass"
+msgstr ""
+
+msgid "Electric bass"
+msgstr ""
+
+msgid "Melodic pop bass"
+msgstr ""
+
+msgid "Funk slap bass"
+msgstr ""
+
+msgid "Slap bass"
+msgstr ""
+
+msgid "Deep hip-hop bass"
+msgstr ""
+
+msgid "Sub bass"
+msgstr ""
+
+msgid "Off-beat electro bass"
+msgstr ""
+
+msgid "Synth bass"
+msgstr ""
+
+msgid "Walking jazz bass"
+msgstr ""
+
+msgid "Latin bass"
+msgstr ""
+
+msgid "Held chords"
+msgstr ""
+
+msgid "Electric piano"
+msgstr ""
+
+msgid "Half-note chords"
+msgstr ""
+
+msgid "Sad ballad"
+msgstr ""
+
+msgid "Felt piano"
+msgstr ""
+
+msgid "Reggae off-beat"
+msgstr ""
+
+msgid "Drawbar organ"
+msgstr ""
+
+msgid "Syncopated keyboard"
+msgstr ""
+
+msgid "Funky keyboard"
+msgstr ""
+
+msgid "Jazz chords"
+msgstr ""
+
+msgid "Solemn organ"
+msgstr ""
+
+msgid "Church organ"
+msgstr ""
+
+msgid "Floating pad"
+msgstr ""
+
+msgid "Warm pad"
+msgstr ""
+
+msgid "Glass pad"
+msgstr ""
+
+msgid "Fast arpeggio"
+msgstr ""
+
+msgid "Synthetic pluck"
+msgstr ""
+
+msgid "Dark arpeggio"
+msgstr ""
+
+msgid "Acid sequence"
+msgstr ""
+
+msgid "Calm arpeggio"
+msgstr ""
+
+msgid "Bells"
+msgstr ""
+
+msgid "Synth stabs"
+msgstr ""
+
+msgid "Square lead"
+msgstr ""
+
+msgid "Gentle melody"
+msgstr ""
+
+msgid "Flute"
+msgstr ""
+
+msgid "Cheerful melody"
+msgstr ""
+
+msgid "Classic lead"
+msgstr ""
+
+msgid "Arpeggiated guitar"
+msgstr ""
+
+msgid "Nylon guitar"
+msgstr ""
+
+msgid "Folk guitar"
+msgstr ""
+
+msgid "Steel guitar"
+msgstr ""
+
+msgid "Muted riff"
+msgstr ""
+
+msgid "Muted guitar"
+msgstr ""
+
+msgid "Sad guitar"
+msgstr ""
+
+msgid "Cascading harp"
+msgstr ""
+
+msgid "Harp"
+msgstr ""
+
+msgid "Latin marimba"
+msgstr ""
+
+msgid "Marimba"
+msgstr ""
+
+# model.rs
+
+msgid "Overdrive"
+msgstr ""
+
+msgid "Chorus"
+msgstr ""
+
+msgid "Tremolo"
+msgstr ""
+
+msgid "Phaser"
+msgstr ""
+
+msgid "Jazz"
+msgstr ""
+
+msgid "Latin"
+msgstr ""
+
+msgid "Software instrument"
+msgstr ""
+
+msgid "Guitar or bass"
+msgstr ""
+
+msgid "Untitled"
+msgstr ""
+
+msgid "C♯"
+msgstr ""
+
+msgid "E♭"
+msgstr ""
+
+msgid "F♯"
+msgstr ""
+
+msgid "A♭"
+msgstr ""
+
+msgid "B♭"
+msgstr ""
+
+# patches.rs
+
+msgid "Synthesizers"
+msgstr ""
+
+msgid "Basses"
+msgstr ""
+
+msgid "Guitars"
+msgstr ""
+
+msgid "Strings and brass"
+msgstr ""
+
+msgid "Mallets"
+msgstr ""
+
+msgid "Drum kits"
+msgstr ""
+
+msgid "Amps (guitar tracks)"
+msgstr ""
+
+msgid "Voice (audio tracks)"
+msgstr ""
+
+msgid "SFZ instruments"
+msgstr ""
+
+msgid "String ensemble"
+msgstr ""
+
+msgid "Brass"
+msgstr ""
+
+msgid "Music box"
+msgstr ""
+
+msgid "Crunch amp"
+msgstr ""
+
+msgid "Lead amp"
+msgstr ""
+
+msgid "Bass amp"
+msgstr ""
+
+msgid "Radio voice"
+msgstr ""
+
+msgid "Voice with echo"
+msgstr ""
+
+# sf3.rs
+
+msgid "this file is not a SoundFont bank"
+msgstr ""
+
+msgid "SoundFont bank without samples"
+msgstr ""
+
+msgid "damaged SF3 bank (sample out of bounds)"
+msgstr ""
+
+msgid "unreadable SF3 sample: {e}"
+msgstr ""
+
+msgid "the SF3 bank is too large once unpacked"
+msgstr ""
+
+# sfz.rs
+
+msgid "SFZ files included in one another too deeply"
+msgstr ""
+
+msgid "none of the {missing} samples of this SFZ instrument could be read"
+msgstr ""
+
+msgid "this SFZ file holds no playable region"
+msgstr ""
+
+# smf.rs
+
+msgid "truncated MIDI file"
+msgstr ""
+
+msgid "invalid number in the MIDI file"
+msgstr ""
+
+msgid "this is not a MIDI file"
+msgstr ""
+
+msgid "invalid MIDI header"
+msgstr ""
+
+msgid "MIDI files in SMPTE time are not supported"
+msgstr ""
+
+msgid "invalid MIDI file"
+msgstr ""
+
+# synth.rs
+
+msgid "unreadable sound bank ({e:?})"
+msgstr ""
+
+# templates.rs
+
+msgid "Empty project"
+msgstr ""
+
+msgid "One instrument track, nothing else."
+msgstr ""
+
+msgid "Demonstration"
+msgstr ""
+
+msgid "Four bars already written to discover the application."
+msgstr ""
+
+msgid "Piano, organ, pad and strings ready to play."
+msgstr ""
+
+msgid "Band"
+msgstr ""
+
+msgid "Drummer, bass, guitar through an amp, and keyboard."
+msgstr ""
+
+msgid "Hip-hop drummer, sub bass, keyboards and synth."
+msgstr ""
+
+msgid "Electro drummer, synth bass, arpeggios and pads."
+msgstr ""
+
+msgid "Songwriter"
+msgstr ""
+
+msgid "Voice, acoustic guitar and light drums."
+msgstr ""
+
+msgid "Track 1"
+msgstr ""
+
+msgid "Voice"
+msgstr ""
+
+msgid "Arpeggio"
+msgstr ""
+
+msgid "Pad"
+msgstr ""
+
+msgid "Song"
+msgstr ""
+
+msgid "Piano"
+msgstr ""
+
+msgid "Chords"
+msgstr ""
+
+msgid "Melody"
+msgstr ""
+
+msgid "Demo"
+msgstr ""
+
+# wav.rs
+
+msgid "this is not a WAV file"
+msgstr ""
+
+msgid "WAV file without a format description"
+msgstr ""
+
+msgid "invalid WAV file"
+msgstr ""
+
+msgid "unsupported WAV format (type {tag}, {bits} bits)"
+msgstr ""
+
+msgid "WAV file without audio data"
+msgstr ""
+
+msgid "Language"
+msgstr ""
+
+msgid "instrument"
+msgstr ""
+
+msgid "effect"
+msgstr ""
+
+msgid "unsupported output format ({})"
+msgstr ""
+
+msgid "unsupported input format ({})"
+msgstr ""
+
+msgid "Also by right-clicking the plug-in's box"
+msgstr ""
+
+msgid "Its settings are in its own window."
+msgstr ""
+
+msgid "Back to the sliders"
+msgstr ""
+
+msgid "Use the plug-in's own window"
+msgstr ""
+
+msgid "This plug-in has no window of its own: it is set with the sliders."
+msgstr ""
+
+msgid "Select a region to edit it.\nDouble-click in an instrument or drummer track to create one."
+msgstr ""
+
+msgid "the download holds no CLAP or VST3 plug-in (this project may only provide other formats)"
+msgstr ""
+
+msgid " The archive is not guaranteed to hold a CLAP or VST3 plug-in: that is checked after the download."
+msgstr ""
+
+msgid "A list of several hundred open-source audio programs. This site only holds links: each project publishes its files its own way. Choose a project: the application then checks its licence and looks, in its latest version, for a Windows archive. Many exist only as an installer and cannot be installed from here."
+msgstr ""
+
+msgid "External plug-ins (CLAP, LV2, VST3)"
+msgstr ""
+
+msgid "Effect or instrument in the CLAP, LV2 or VST3 format"
+msgstr ""
+
+msgid "Import a VST3 plug-in (.vst3 file)…"
+msgstr ""
+
+msgid "Import a .vst3 file…"
+msgstr ""
+
+msgid "No plug-in is installed yet."
+msgstr ""
+
+msgid "VST3 plug-in"
+msgstr ""
+
+msgid "this file is not a VST3 plug-in"
+msgstr ""
+
+msgid "the plug-in's process stopped answering"
+msgstr ""
+
+msgid "its process stopped; the track goes on without it"
+msgstr ""
+
+msgid "the program that holds plug-ins was not found"
+msgstr ""
+
+msgid "the plug-in's process could not be started ({e})"
+msgstr ""
+
+msgid "the plug-in's process could not be started"
+msgstr ""
+
+msgid "the plug-in's process stopped while starting the plug-in"
+msgstr ""
+
+msgid "This applies to the plug-ins started from now on."
+msgstr ""
+
+msgid "Plug-in “{}”: {}"
+msgstr ""
+
+msgid "Plug-in stopped"
+msgstr ""
+
+msgid "Start it again"
+msgstr ""
+
+msgid "Run each plug-in in a process of its own"
+msgstr ""
+
+msgid "Safer: a faulty plug-in stops alone instead of taking the application down. Slightly slower to start."
+msgstr ""
+
+msgid "Options"
+msgstr ""
+
+msgid "Reopen the program as I left it"
+msgstr ""
+
+msgid "On quitting, the project and the layout are kept as they are, saved or not, and come back at the next start. Without this, quitting offers to save the project."
+msgstr ""
+
+msgid "The program is as you left it."
+msgstr ""
+
+msgid "The program is as you left it, but {} audio file(s) cannot be found: {}"
+msgstr ""
+
+msgid "Quit"
+msgstr ""
+
+msgid "This project has changes that are not saved."
+msgstr ""
+
+msgid "If you quit without saving, they are lost for good."
+msgstr ""
+
+msgid "Save and quit"
+msgstr ""
+
+msgid "Quit without saving"
+msgstr ""
+
+msgid "Audio output “{}”: {}"
+msgstr ""
+
+msgid "Audio output “{}” is not available: its tracks play in the main mix."
+msgstr ""
+
+msgid "Back under the tracks"
+msgstr ""
+
+msgid "Shows the tracks again, with this panel under them"
+msgstr ""
+
+msgid "Full window"
+msgstr ""
+
+msgid "Shows only this panel; the tracks come back with the same button"
+msgstr ""
+
+msgid "Audio outputs and inputs…"
+msgstr ""
+
+msgid "Audio outputs and inputs"
+msgstr ""
+
+msgid "System default"
+msgstr ""
+
+msgid "Main output: where the mix is heard"
+msgstr ""
+
+msgid "Input: what is recorded and listened to"
+msgstr ""
+
+msgid "A track can also have an output or an input of its own: right-click its header."
+msgstr ""
+
+msgid "List the devices again"
+msgstr ""
+
+msgid "After plugging in or unplugging a sound card"
+msgstr ""
+
+msgid "Audio output of this track"
+msgstr ""
+
+msgid "Main mix"
+msgstr ""
+
+msgid "“{}” is not on this computer: the track plays in the main mix."
+msgstr ""
+
+msgid "Audio input of this track"
+msgstr ""
+
+msgid "The input chosen in the options"
+msgstr ""
+
+msgid "Reverb damp."
+msgstr ""
+
+msgid "A file that gives every colour: change them, then import it"
+msgstr ""
+
+msgid "AIFF audio"
+msgstr ""
+
+msgid "Add files…"
+msgstr ""
+
+msgid "All of them, mixed"
+msgstr ""
+
+msgid "As chosen in the Audio menu"
+msgstr ""
+
+msgid "Audio loops"
+msgstr ""
+
+msgid "Channel of the input"
+msgstr ""
+
+msgid "Copies audio files of yours into the loop browser. A tempo in the name (“Funk 98 bpm”) is used; otherwise it is worked out from the length."
+msgstr ""
+
+msgid "Could not write the file: {e}"
+msgstr ""
+
+msgid "Drag onto a track, or under the tracks for a new one"
+msgstr ""
+
+msgid "Editor of the selected region. With notes: a click adds a note, dragging in empty space selects, right-click deletes, Q puts the selection back on the grid."
+msgstr ""
+
+msgid "Empty this list"
+msgstr ""
+
+msgid "Export the song as {bits}-bit AIFF…"
+msgstr ""
+
+msgid "Flat"
+msgstr ""
+
+msgid "Import a theme (.json file)…"
+msgstr ""
+
+msgid "Input"
+msgstr ""
+
+msgid "Input {}"
+msgstr ""
+
+msgid "Kick follows"
+msgstr ""
+
+msgid "Library: the sounds, by category. Choosing one gives it to the selected track."
+msgstr ""
+
+msgid "Loop browser: drag a loop onto a track, or under the tracks to make a new track for it."
+msgstr ""
+
+msgid "Loops of notes"
+msgstr ""
+
+msgid "Menus and transport: play, record, loop, position, tempo, and the buttons that show or hide the panels."
+msgstr ""
+
+msgid "Minutes:seconds"
+msgstr ""
+
+msgid "None yet. No recorded loop comes with the program: add your own files."
+msgstr ""
+
+msgid "Not a theme file"
+msgstr ""
+
+msgid "Notepad: free text kept with the project."
+msgstr ""
+
+msgid "Open a recent project"
+msgstr ""
+
+msgid "Open the themes folder"
+msgstr ""
+
+msgid "Output of all the tracks"
+msgstr ""
+
+msgid "Puts the three points back on the middle line"
+msgstr ""
+
+msgid "Quality of MP3 and AAC"
+msgstr ""
+
+msgid "Quick help: move the pointer over a part of the window."
+msgstr ""
+
+msgid "Quick help: the bar at the bottom tells what the pointer is over, and the tips of the buttons show at once"
+msgstr ""
+
+msgid "Recent projects:"
+msgstr ""
+
+msgid "Ruler: click to move the playhead; click in its upper half, then drag, to set the loop area."
+msgstr ""
+
+msgid "Save this theme as a model…"
+msgstr ""
+
+msgid "Snaps the selected notes (or all of them) onto the chosen grid. Key: Q"
+msgstr ""
+
+msgid "Sound controls of the selected track: sound, equaliser, effects, plug-ins. Drag a box by its title to move it; right-click to hide it or to show the others."
+msgstr ""
+
+msgid "Status bar: what the program last did, and the state of the audio output."
+msgstr ""
+
+msgid "The kick drum plays where the notes of that track begin, so that the drums and, say, the bass move together."
+msgstr ""
+
+msgid "Theme"
+msgstr ""
+
+msgid "Theme added: {name}"
+msgstr ""
+
+msgid "Theme (JSON)"
+msgstr ""
+
+msgid "Theme written to {}. Change its colours, then import it."
+msgstr ""
+
+msgid "This theme cannot be read: {e}"
+msgstr ""
+
+msgid "Track header: name, icon, mute, solo, volume and pan. Right-click it for the track's menu."
+msgstr ""
+
+msgid "Tracks: double-click makes a region, dragging moves it; its right edge changes its length (bottom) or repeats it (top). Loops can be dropped here."
+msgstr ""
+
+msgid "best, MP3 only"
+msgstr ""
+
+msgid "good"
+msgstr ""
+
+msgid "its own pattern"
+msgstr ""
+
+msgid "semitones"
+msgstr ""
+
+msgid "smaller file"
+msgstr ""
+
+msgid "very good"
+msgstr ""
+
+msgid "{} audio loop(s) added to the loop browser."
+msgstr ""
+
+msgid "Light"
+msgstr ""
+
+msgid "All"
+msgstr ""
+
+msgid "Artist or title"
+msgstr ""
+
+msgid "Choose a song on the left."
+msgstr ""
+
+msgid "Create the project"
+msgstr ""
+
+msgid "New from a Songsterr song…"
+msgstr ""
+
+msgid "Nothing found."
+msgstr ""
+
+msgid "Part {}"
+msgstr ""
+
+msgid "Reading the tablature…"
+msgstr ""
+
+msgid "Replaces the current project with the chosen tracks, one track of notes each, with what the tablature writes around the notes."
+msgstr ""
+
+msgid "Search failed: {error}"
+msgstr ""
+
+msgid "Tracks to import"
+msgstr ""
+
+msgid "no part was chosen"
+msgstr ""
+
+msgid "the import stopped unexpectedly"
+msgstr ""
+
+msgid "the search stopped unexpectedly"
+msgstr ""
+
+msgid "the site answered {status}"
+msgstr ""
+
+msgid "the site answered {status}: {error}"
+msgstr ""
+
+msgid "{} tracks"
+msgstr ""
+
+msgid "“{name}” was not read: {e}"
+msgstr ""
+
+msgid "“{name}”: {count} tracks imported from Songsterr."
+msgstr ""
+
+msgid "Built-in sounds stand in for the instruments: install a General MIDI bank (Library > Download sounds) for real ones."
+msgstr ""
+
+msgid "Instruments from the installed sound bank."
+msgstr ""
+
+msgid "{real} of {count} tracks got an instrument of the installed sound bank; the others keep a built-in sound."
+msgstr ""
+
+msgid "Drag to move · with Alt or Ctrl held: a copy"
+msgstr ""
+
+msgid "Drop: audio or MIDI at the playhead; a sound bank into the library; a project to open it"
+msgstr ""
+
+msgid "Drop: audio or MIDI onto the tracks; a sound bank into the library"
+msgstr ""
+
+msgid "Pedal {}"
+msgstr ""
+
+msgid "“{}” is not a file the program takes: audio (WAV, MP3, AAC, FLAC, Ogg), MIDI, sound bank (SF2, SF3, SFZ) or project."
+msgstr ""
+
+msgid "EQ low"
+msgstr ""
+
+msgid "EQ mid"
+msgstr ""
+
+msgid "EQ high"
+msgstr ""
+
+msgid "Amp gain"
+msgstr ""
+
+msgid "Pedal"
+msgstr ""
+
+msgid "Tab"
+msgstr ""
+
+msgid "Tablature: the notes on the strings of the track's guitar or bass"
+msgstr ""
+
+msgid "Click: select · Ctrl and a click: add to the selection · Shift and a click: choose beats to loop · Ctrl and the wheel, or - and +: zoom"
+msgstr ""
+
+msgid "{out_of_reach} notes are below the lowest string or past the last fret"
+msgstr ""
+
+msgid "Playhead kept in place in the editor"
+msgstr ""
+
+msgid "Text size"
+msgstr ""
+
+msgid "Size of what the tablature writes: the fret numbers, the chord names and the chord grids"
+msgstr ""
+
+msgid "While the song plays, the notes scroll under a playhead that stays put. Otherwise the playhead moves and the editor turns the page."
+msgstr ""
+
+msgid "The public tablatures are read; no account is needed."
+msgstr ""
+
+msgid "Playhead kept in the middle of the tracks"
+msgstr ""
+
+msgid "While the song plays, the tracks slide under a playhead that stays put. Otherwise the playhead moves and the view turns the page."
+msgstr ""
+
+# ui_sites.rs, Guitar Pro files, the lines of the editors
+
+msgid "Two lines"
+msgstr ""
+
+msgid "The score or the tablature over two lines of whole bars, as on a page, instead of one line that scrolls. The full window lays the whole song out that way."
+msgstr ""
+
+msgid "Opens the site in your browser"
+msgstr ""
+
+msgid "Search here…"
+msgstr ""
+
+msgid "Open the site"
+msgstr ""
+
+msgid "Import a Guitar Pro file…"
+msgstr ""
+
+msgid "Makes a project of a Guitar Pro file (.gp3, .gp4, .gp5, .gpx or .gp) or a MusicXML score (.musicxml, .xml or .mxl) you downloaded or wrote: its tracks, tuning, tempo, sections and techniques"
+msgstr ""
+
+msgid "A file downloaded from one of these sites, or made with Guitar Pro."
+msgstr ""
+
+msgid "Tablatures written by the users of these sites are of songs that are, for the most part, under copyright: what you import is for your own practice, not to be passed on with a project."
+msgstr ""
+
+msgid "Guitar Pro or MusicXML score"
+msgstr ""
+
+msgid "“{file}” was not read: {e}"
+msgstr ""
+
+msgid "“{name}”: {count} tracks read from the file."
+msgstr ""
+
+msgid "New from a Guitar Pro or MusicXML file…"
+msgstr ""
+
+msgid "Import from a tablature site…"
+msgstr ""
+
+msgid "The sites of tablatures the program knows, what each allows, and the way in for the files you download from them"
+msgstr ""
+
+msgid "Import from a tablature site"
+msgstr ""
+
+msgid "Guitar, bass and drum tablatures written by its users, with every technique (bends, slides, harmonics…), read by its public player."
+msgstr ""
+
+msgid "The program reads what the site shows to anybody, for your own practice, and keeps no account."
+msgstr ""
+
+msgid "Chords, text tablatures and Guitar Pro files, by its users."
+msgstr ""
+
+msgid "Its terms of use allow only printing a tablature for yourself and forbid keeping its contents in a program, and its robots file closes the search and the downloads to programs: the program only opens the site."
+msgstr ""
+
+msgid "Guitar Pro 3 and 4 files and text tablatures, in French, free and without an account."
+msgstr ""
+
+msgid "Its conditions reserve the tablatures to personal and educational use, and its robots file keeps programs away from its downloads: download a tablature yourself, then import the file here."
+msgstr ""
+
+msgid "Guitar Pro and text tablatures, in French, free and without an account."
+msgstr ""
+
+msgid "Its conditions ask for personal use only, and say nothing of programs: until its keepers agree to one reading it, download a tablature yourself, then import the file here."
+msgstr ""
+
+# editor_tracks.rs, the editor of several tracks
+
+msgid "Tracks in the editor: {}"
+msgstr ""
+
+msgid "Shows one of the tracks at a time: the one being played, the first chosen having priority. When nothing more comes on the one shown within the next {bars} bars, the next one that plays takes its place as its last note is struck. View > “Auto-switch after” sets the bars."
+msgstr ""
+
+msgid "Auto-switch"
+msgstr ""
+
+msgid "Following: {}"
+msgstr ""
+
+msgid "Ctrl and a click on a track header adds the track here, or takes it away"
+msgstr ""
+
+msgid "Auto-switch after"
+msgstr ""
+
+msgid "With several tracks in the editor and auto-switch on: bars ahead in which the track shown must still have a note to come, or the next one that plays takes its place"
+msgstr ""
+
+# ui_sites.rs, tabsites.rs
+
+msgid "Site:"
+msgstr ""
+
+msgid "Its terms of use forbid programs to read it: the program only opens the site."
+msgstr ""
+
+msgid "Searches Songsterr, Guitariff or Tablature Hub and makes a project of the tracks of a tablature; or reads a Guitar Pro file"
+msgstr ""
+
+msgid "Type an artist or a title, then Find. The Guitar Pro files come from {site}, where its users shared them."
+msgstr ""
+
+msgid "The tablature was not read: {e}"
+msgstr ""
+
+msgid "“{name}”: {count} tracks read from {site}."
+msgstr ""
+
+msgid "the archive holds no Guitar Pro file"
+msgstr ""
+
+msgid "the page offers no file"
+msgstr ""
+
+msgid "the site did not give the file"
+msgstr ""
+
+msgid "Songs or artists"
+msgstr ""
+
+msgid "Described by “{file}”."
+msgstr ""
+
+msgid "Some descriptions of sites were not read:"
+msgstr ""
+
+msgid "The program has not read {site} yet. It will search it and fetch the tablatures you choose, as its description says, from {home}."
+msgstr ""
+
+msgid "The program will not ask again for this site"
+msgstr ""
+
+msgid "This description was added to the program by a file of the sites folder (“{file}”), not by the program."
+msgstr ""
+
+msgid "Type an artist or a title, then Find. The tablatures come from {site}, where its users shared them."
+msgstr ""
+
+msgid "Use {site}"
+msgstr ""
+
+msgid "Whether a site may be read this way is for you to check: the program reads it at your request, for your own use."
+msgstr ""
+
+msgid "the archive holds no Guitar Pro or MusicXML file"
+msgstr ""
+
+msgid "the description asks for “{url}”, which is not a secure address"
+msgstr ""
+
+msgid "the site did not answer"
+msgstr ""
+
+msgid "“{name}”: {e}"
+msgstr ""
+
+msgid "Loop the beats"
+msgstr ""
+
+msgid "Stop the loop"
+msgstr ""
+
+msgid "Plays the chosen beats over and over: the loop area of the song is set to them"
+msgstr ""
+
+msgid "Shift and a click on a beat, then on another, chooses the beats to loop"
+msgstr ""
+
+msgid "Piano or keyboard"
+msgstr ""
+
+msgid "Synthesizer"
+msgstr ""
+
+msgid "Strings"
+msgstr ""
+
+msgid "Winds"
+msgstr ""
+
+msgid "Other instrument"
+msgstr ""
+
+msgid "Straight"
+msgstr ""
+
+msgid "Swing (eighths)"
+msgstr ""
+
+msgid "Swing (sixteenths)"
+msgstr ""
+
+msgid "A MIDI file…"
+msgstr ""
+
+msgid "A file can also be dropped onto the window. To make a new project of a Guitar Pro or MusicXML file, or of a tablature site, use the File menu: they replace the project."
+msgstr ""
+
+msgid "AIFF, {} bits"
+msgstr ""
+
+msgid "Add to this project:"
+msgstr ""
+
+msgid "Adds an audio file or a MIDI file to the project"
+msgstr ""
+
+msgid "An audio file (WAV, MP3, AAC)…"
+msgstr ""
+
+msgid "At the next start, the last project comes back as you left it, saved or not, with the layout. Without this, the program starts on the demonstration project. Either way, the projects stay in File > Previous sessions."
+msgstr ""
+
+msgid "Between 5 and 100; the oldest ones go"
+msgstr ""
+
+msgid "Change the folder…"
+msgstr ""
+
+msgid "Double-click to reopen it · {}"
+msgstr ""
+
+msgid "Export the song as:"
+msgstr ""
+
+msgid "Export to"
+msgstr ""
+
+msgid "Export to…"
+msgstr ""
+
+msgid "Export…"
+msgstr ""
+
+msgid "Import into this project"
+msgstr ""
+
+msgid "Import into this project…"
+msgstr ""
+
+msgid "Its tracks of notes, as new tracks"
+msgstr ""
+
+msgid "Keep the last"
+msgstr ""
+
+msgid "Kept in {}"
+msgstr ""
+
+msgid "Lossless and finer: to go on mixing or mastering elsewhere"
+msgstr ""
+
+msgid "Lossless, the usual format on a Mac"
+msgstr ""
+
+msgid "Lossless, as on a CD: for any program or player"
+msgstr ""
+
+msgid "New from a tablature site"
+msgstr ""
+
+msgid "New from a tablature site…"
+msgstr ""
+
+msgid "No session yet: the projects you work on are kept here as you go."
+msgstr ""
+
+msgid "On the selected audio track, or a new one, at the playhead"
+msgstr ""
+
+msgid "Open the folder"
+msgstr ""
+
+msgid "Previous sessions"
+msgstr ""
+
+msgid "Previous sessions…"
+msgstr ""
+
+msgid "Reopen"
+msgstr ""
+
+msgid "Small, and a little better than MP3 at the same size"
+msgstr ""
+
+msgid "Small, to share or to listen to on a phone"
+msgstr ""
+
+msgid "The notes of the tracks, without sound: for another program or a score editor"
+msgstr ""
+
+msgid "The projects you worked on, kept as you went without your having to save them: reopen one"
+msgstr ""
+
+msgid "The session was not deleted: {e}"
+msgstr ""
+
+msgid "The session was not kept: {e}"
+msgstr ""
+
+msgid "The sessions are now kept in {}."
+msgstr ""
+
+msgid "The song as WAV, AIFF, MP3 or AAC, or its notes as MIDI"
+msgstr ""
+
+msgid "The whole song is exported, from its start to its end marker."
+msgstr ""
+
+msgid "This session cannot be read."
+msgstr ""
+
+msgid "WAV, {} bits"
+msgstr ""
+
+msgid "just now"
+msgstr ""
+
+msgid "never saved in a file"
+msgstr ""
+
+msgid "open now"
+msgstr ""
+
+msgid "projects"
+msgstr ""
+
+msgid "{failed} sessions could not be moved to {}."
+msgstr ""
+
+msgid "{} h ago"
+msgstr ""
+
+msgid "{} min ago"
+msgstr ""
+
+msgid "{} sessions, {} in all."
+msgstr ""
+
+msgid "Artist"
+msgstr ""
+
+msgid "Title"
+msgstr ""
+
+msgid "written for a newer version of OpenGarageMusic (description format {version}, this version reads up to {}); update the program to use it"
+msgstr ""
+
+msgid "(or choose your music library folder in File > Options)"
+msgstr ""
+
+msgid "0.1 s ▶"
+msgstr ""
+
+msgid "A recording of the song…"
+msgstr ""
+
+msgid "A video track is not recorded: it plays the video of the song."
+msgstr ""
+
+msgid "A video track plays the sound of its video: it has no sound of the library."
+msgstr ""
+
+msgid "An MP3, OGG, FLAC, M4A or WAV file of yours: it is found in step with the tablature once the project is made"
+msgstr ""
+
+msgid "Another recording leads the song."
+msgstr ""
+
+msgid "Delay of the video player"
+msgstr ""
+
+msgid "Finding the recording in step with the score…"
+msgstr ""
+
+msgid "In step with the score:"
+msgstr ""
+
+msgid "Leads the song: played with its original sound."
+msgstr ""
+
+msgid "MP3, OGG, FLAC, M4A or WAV: found in step with the score, to play the song with its original sound"
+msgstr ""
+
+msgid "Music library folder…"
+msgstr ""
+
+msgid "Not this one"
+msgstr ""
+
+msgid "On: the song plays with its recording (the video or the audio file), at its pace; the other tracks are silent unless their M is turned off. Off: the song plays as written, at its own tempo."
+msgstr ""
+
+msgid "Original sound"
+msgstr ""
+
+msgid "Played as written: at the tempo of the score, the recordings silent."
+msgstr ""
+
+msgid "Played with the original sound: at the pace of the recording, the other tracks silent unless you turn them on."
+msgstr ""
+
+msgid "Silent while the song plays with its original sound: turn it off to play this track along with the recording"
+msgstr ""
+
+msgid "The recording comes earlier against the score"
+msgstr ""
+
+msgid "The recording comes later against the score"
+msgstr ""
+
+msgid "The recording the song follows with its original sound"
+msgstr ""
+
+msgid "The recording was not read: {e}"
+msgstr ""
+
+msgid "The site has no video in step with this tablature."
+msgstr ""
+
+msgid "The site's video of the song, as a track: selected, it shows in the editor; the song can be played with its sound, the tablature following it"
+msgstr ""
+
+msgid "The song is played as written: turn on “Original sound” to play it with the video."
+msgstr ""
+
+msgid "The video gives {points} bars where the tablature has {count}: it may drift; shift it if need be."
+msgstr ""
+
+msgid "The video player could not start: it needs og-video.exe and WebView2Loader.dll next to the program, and Microsoft's WebView2 runtime (part of Windows 10 and 11)."
+msgstr ""
+
+msgid "The video player did not start: {e}"
+msgstr ""
+
+msgid "The video player stopped: {why}"
+msgstr ""
+
+msgid "Video"
+msgstr ""
+
+msgid "Video players lag a little behind; this computer's lag, for every video"
+msgstr ""
+
+msgid "Waiting for the video…"
+msgstr ""
+
+msgid "Where your own recordings are: when a tablature is imported, the recording of the song is looked for there. Now: {folder} ({found} files)."
+msgstr ""
+
+msgid "YouTube does not play this video here (error {code}): it may have been removed, or be blocked in your country or outside YouTube."
+msgstr ""
+
+msgid "YouTube video in step with the tablature"
+msgstr ""
+
+msgid "YouTube video {}"
+msgstr ""
+
+msgid "Your music library is read from {}."
+msgstr ""
+
+msgid "Your recording: {}"
+msgstr ""
+
+msgid "none"
+msgstr ""
+
+msgid "the reading stopped unexpectedly"
+msgstr ""
+
+msgid "the score has no notes to compare"
+msgstr ""
+
+msgid "{what} · leads"
+msgstr ""
+
+msgid "“{name}” is barely like the score ({agreement} % alike): is it the same song, the same version? It plays with the song all the same; check it, and shift it if need be."
+msgstr ""
+
+msgid "“{name}” is in step with the score ({agreement} % alike). The song now plays with it; the other tracks are silent until you turn them on."
+msgstr ""
+
+msgid "◀ 0.1 s"
+msgstr ""
+
+msgid "The tempo of the recording here: the song follows it"
+msgstr ""
+
+msgid "a click elsewhere: the playhead goes there"
+msgstr ""
+
+msgid "Alt and a click: the playhead goes there"
+msgstr ""
+
+msgid "Shows the video of the song in a corner of the window when the editor does not show it"
+msgstr ""
+
+msgid "An LRC file (timed) or a text file"
+msgstr ""
+
+msgid "Asking LRCLIB for the words…"
+msgstr ""
+
+msgid "Asks lrclib.net, a free base of timed words, by the artist and the title of the project"
+msgstr ""
+
+msgid "From a file…"
+msgstr ""
+
+msgid "From the singing part of the tablature, fetched even when it is not ticked; or else from LRCLIB, a free base of words"
+msgstr ""
+
+msgid "Keep these words"
+msgstr ""
+
+msgid "LRCLIB did not answer ({e})"
+msgstr ""
+
+msgid "LRCLIB has no words for this song. Choose a file of them, or type them."
+msgstr ""
+
+msgid "No words for this song yet."
+msgstr ""
+
+msgid "Search LRCLIB"
+msgstr ""
+
+msgid "Shown under the panel"
+msgstr ""
+
+msgid "Shows the words of the song under the panel, as the song plays"
+msgstr ""
+
+msgid "The lines being sung"
+msgstr ""
+
+msgid "The whole text, scrolling"
+msgstr ""
+
+msgid "The words come later"
+msgstr ""
+
+msgid "The words come sooner"
+msgstr ""
+
+msgid "The words of the song"
+msgstr ""
+
+msgid "This file holds no words."
+msgstr ""
+
+msgid "Type or paste the words"
+msgstr ""
+
+msgid "Type or paste the words, a line of the song a line of text. Lines that start with a time, as “[01:23.45]”, follow the recording."
+msgstr ""
+
+msgid "Type…"
+msgstr ""
+
+msgid "Words"
+msgstr ""
+
+msgid "Words (LRC, text)"
+msgstr ""
+
+msgid "Words of the song"
+msgstr ""
+
+msgid "from the tablature"
+msgstr ""
+
+msgid "typed"
+msgstr ""
+
+msgid "Video {number}: the original"
+msgstr ""
+
+msgid "Video {number}: {label}"
+msgstr ""
+
+msgid "The site gave several videos of the song, each in step with the tablature: choose the one played"
+msgstr ""
+
+msgid "(no artist)"
+msgstr ""
+
+msgid "< Artists"
+msgstr ""
+
+msgid "Add a song"
+msgstr ""
+
+msgid "Add a song…"
+msgstr ""
+
+msgid "Alphabetical"
+msgstr ""
+
+msgid "Among the previous sessions, by its artist and title; otherwise its tablature on the site of Settings > Site searched"
+msgstr ""
+
+msgid "By artist"
+msgstr ""
+
+msgid "CC 0 (bank select)"
+msgstr ""
+
+msgid "Change the song"
+msgstr ""
+
+msgid "Change…"
+msgstr ""
+
+msgid "Channel: {channel}"
+msgstr ""
+
+msgid "Choose a picture…"
+msgstr ""
+
+msgid "Choosing a song opens its project in the main window"
+msgstr ""
+
+msgid "Connected to the MIDI output “{name}”."
+msgstr ""
+
+msgid "Covers and photographs from Deezer"
+msgstr ""
+
+msgid "Empty the pictures kept"
+msgstr ""
+
+msgid "Every song has its project."
+msgstr ""
+
+msgid "Export as a CSV file…"
+msgstr ""
+
+msgid "Find its project"
+msgstr ""
+
+msgid "Find the projects of the whole list"
+msgstr ""
+
+msgid "Folder of the projects…"
+msgstr ""
+
+msgid "For each song without a project: one kept in the previous sessions, by its artist and title; otherwise its tablature, chosen by you on the site of Settings > Site searched. The projects are saved in the folder of the list, to be opened later without the Internet."
+msgstr ""
+
+msgid "Give it a project file…"
+msgstr ""
+
+msgid "Give it the project open now"
+msgstr ""
+
+msgid "Import a CSV file…"
+msgstr ""
+
+msgid "It has no project: right-click it to find one."
+msgstr ""
+
+msgid "Its project is no longer there: {}"
+msgstr ""
+
+msgid "Its project was not opened: {e}"
+msgstr ""
+
+msgid "Line {line} of “{file}” has no artist, no song and no text."
+msgstr ""
+
+msgid "Line {line} of “{file}”: “{text}” is not a number from 0 to 128."
+msgstr ""
+
+msgid "List"
+msgstr ""
+
+msgid "List > Import a CSV file… or Add a song… to make the list."
+msgstr ""
+
+msgid "Look again"
+msgstr ""
+
+msgid "MIDI output: {current}"
+msgstr ""
+
+msgid "Message: {message}"
+msgstr ""
+
+msgid "No MIDI output"
+msgstr ""
+
+msgid "No MIDI output found."
+msgstr ""
+
+msgid "No MIDI output: the songs send nothing."
+msgstr ""
+
+msgid "Number"
+msgstr ""
+
+msgid "Numbers from 1"
+msgstr ""
+
+msgid "OK"
+msgstr ""
+
+msgid "Open the song's project"
+msgstr ""
+
+msgid "Order"
+msgstr ""
+
+msgid "Order of the list"
+msgstr ""
+
+msgid "Picture"
+msgstr ""
+
+msgid "Program change"
+msgstr ""
+
+msgid "Remove from the list"
+msgstr ""
+
+msgid "Remove my picture"
+msgstr ""
+
+msgid "Saved in the folder of the list when it has no file yet"
+msgstr ""
+
+msgid "MIDI Pilot"
+msgstr "MIDI Pilot"
+
+msgid "MIDI Pilot…"
+msgstr "MIDI Pilot…"
+
+msgid "Site searched: {site}"
+msgstr ""
+
+msgid "Take its project away"
+msgstr ""
+
+msgid "Text of the button"
+msgstr ""
+
+msgid "The button shows the cover found again"
+msgstr ""
+
+msgid "The buttons show the cover of the song's album, and those of the artists their photograph, looked for on Deezer by artist and title and kept on the disk. A right-click on a song gives it a picture of your own."
+msgstr ""
+
+msgid "The covers and photographs are looked for again"
+msgstr ""
+
+msgid "The file was not read: {e}"
+msgstr ""
+
+msgid "The first song of the list is number 1, and sends 0"
+msgstr ""
+
+msgid "The list is empty: List > Import a CSV file… or Add a song…"
+msgstr ""
+
+msgid "The list is prepared: {linked} songs of {count} have their project."
+msgstr ""
+
+msgid "The list is written in {}."
+msgstr ""
+
+msgid "The list was not written: {e}"
+msgstr ""
+
+msgid "The number of its preset, sent by MIDI when the song is chosen"
+msgstr ""
+
+msgid "The pictures kept are emptied: they are looked for again."
+msgstr ""
+
+msgid "The pictures were not emptied: {e}"
+msgstr ""
+
+msgid "The preparation of the list is stopped."
+msgstr ""
+
+msgid "The project file stays where it is"
+msgstr ""
+
+msgid "The project was not saved: {e}"
+msgstr ""
+
+msgid "The songs of a concert or a rehearsal, in a window of their own: each sends the number of its preset to a pedal switcher or an effects unit by MIDI, and opens its project"
+msgstr ""
+
+msgid "Where the projects found for the list are saved. Now: {}"
+msgstr ""
+
+msgid "optional"
+msgstr ""
+
+msgid "the MIDI output “{name}” cannot be opened ({e}): is another program using it?"
+msgstr ""
+
+msgid "the MIDI output “{name}” is not connected"
+msgstr ""
+
+msgid "{count} songs read from “{file}”."
+msgstr ""
+
+msgid "{count} songs."
+msgstr ""
+
+msgid "{label} (no MIDI output: Settings > MIDI output)."
+msgstr ""
+
+msgid "{label}: choose its tablature in the main window."
+msgstr ""
+
+msgid "{label}: its project is {}."
+msgstr ""
+
+msgid "{label}: the MIDI message was not sent ({e})."
+msgstr ""
+
+msgid "{label}: the number {number} cannot be sent (0 to 127)."
+msgstr ""
+
+msgid "{label}: {what} = {value}, channel {channel}."
+msgstr ""
+
+msgid "{name}\n{count} songs"
+msgstr ""
+
+msgid "{output} · channel {channel} · {message}"
+msgstr ""
+
+msgid "major"
+msgstr ""
+
+msgid "minor"
+msgstr ""
+
+msgid "the download stopped unexpectedly"
+msgstr ""
+
+msgid "Zoom out: more bars across the line"
+msgstr ""
+
+msgid "Zoom in: fewer bars across the line"
+msgstr ""
+
+msgid "{bars} bars across the line. A click: four bars again; Ctrl and the mouse wheel zoom too"
+msgstr ""
+
+msgid "Take recorded, but {seconds:.1} s of it was lost: the window stood still too long."
+msgstr ""
+
+msgid "CSV file"
+msgstr ""
+
+msgid "Audio (WAV, MP3, M4A, AAC, OGG, FLAC)"
+msgstr ""
+
+msgid "This file cannot be used: {e}"
+msgstr ""
+
+msgid "Capture of an amplifier or a pedal (NAM, Proteus, AIDA-X)"
+msgstr ""
+
+msgid "Impulse response of a cabinet (WAV, FLAC)"
+msgstr ""
+
+msgid "Impulse response of a room (WAV, FLAC)"
+msgstr ""
+
+msgid "Back to the built-in amp"
+msgstr ""
+
+msgid "Capture not found"
+msgstr ""
+
+msgid "Capture…"
+msgstr ""
+
+msgid "A capture of a real amplifier or pedal takes the place of the built-in amp: a .nam file of Neural Amp Modeler, or a .json one of Proteus or AIDA-X"
+msgstr ""
+
+msgid "Speaker"
+msgstr ""
+
+msgid "Impulse response, {:.2} s"
+msgstr ""
+
+msgid "Back to the built-in speaker filter"
+msgstr ""
+
+msgid "Impulse not found"
+msgstr ""
+
+msgid "Cabinet IR…"
+msgstr ""
+
+msgid "An impulse response of a loudspeaker cabinet (a WAV or FLAC file) takes the place of the built-in speaker filter"
+msgstr ""
+
+msgid "Back to the built-in reverb"
+msgstr ""
+
+msgid "Room IR…"
+msgstr ""
+
+msgid "An impulse response of a room, a plate or a spring (a WAV or FLAC file) takes the place of the built-in reverb"
+msgstr ""
+
+msgid "the download holds no capture (.nam or .json file)"
+msgstr ""
+
+msgid "the download holds no impulse response (.wav or .flac file)"
+msgstr ""
+
+msgid "Plate"
+msgstr ""
+
+msgid "Repeats"
+msgstr ""
+
+msgid "Resonance"
+msgstr ""
+
+msgid "Room"
+msgstr ""
+
+msgid "Sensitivity"
+msgstr ""
+
+msgid "Threshold"
+msgstr ""
+
+msgid "Noise gate"
+msgstr ""
+
+msgid "Wah"
+msgstr ""
+
+msgid "Auto-wah"
+msgstr ""
+
+msgid "Flanger"
+msgstr ""
+
+msgid "Tape echo"
+msgstr ""
+
+msgid "Analog echo"
+msgstr ""
+
+msgid "Add a pedal…"
+msgstr ""
+
+msgid "A word to sift the list (optional)"
+msgstr ""
+
+msgid "Captures"
+msgstr ""
+
+msgid "Captures and impulse responses from the sites…"
+msgstr ""
+
+msgid "Captures of amplifiers and pedals, and impulse responses of cabinets and rooms, from the sites described to the program (TONE3000 with your account, GuitarML)"
+msgstr ""
+
+msgid "Choose one on the left."
+msgstr ""
+
+msgid "Download to the library"
+msgstr ""
+
+msgid "Each capture and impulse response is under the licence its author chose, written beside it in the library: most may be used and played freely, not passed on."
+msgstr ""
+
+msgid "Files"
+msgstr ""
+
+msgid "Impulse responses"
+msgstr ""
+
+msgid "Keep the key"
+msgstr ""
+
+msgid "Key"
+msgstr ""
+
+msgid "On the site's page, enter the code {user_code}, signed in to your account."
+msgstr ""
+
+msgid "Open the page"
+msgstr ""
+
+msgid "Press List: your favourites on the site, what is trending and what is new. A word in the box sifts the list."
+msgstr ""
+
+msgid "Sign in to {name}…"
+msgstr ""
+
+msgid "Sign out"
+msgstr ""
+
+msgid "Sign-in failed: {e}"
+msgstr ""
+
+msgid "Signed in to {name}."
+msgstr ""
+
+msgid "Signed in."
+msgstr ""
+
+msgid "Tablatures"
+msgstr ""
+
+msgid "The files go into the library's folder of the site, with where they came from; the amp of a track then takes them with “Capture…” or “Cabinet IR…”, the reverb with “Room IR…”"
+msgstr ""
+
+msgid "The files were not written: {e}"
+msgstr ""
+
+msgid "The program asks the site for a code; you enter it on the site, in your browser, signed in to your account. The program then reads the site with your account and downloads only what you ask for."
+msgstr ""
+
+msgid "The program forgets the token the site gave it"
+msgstr ""
+
+msgid "The site is read with your account, for what you ask only."
+msgstr ""
+
+msgid "The site lists no file for it."
+msgstr ""
+
+msgid "This site asks each program for a key of its own. Make one in your account on the site (a “publishable key”) and paste it here; the program keeps it."
+msgstr ""
+
+msgid "Waiting for you to sign in…"
+msgstr ""
+
+msgid "Where keys are made"
+msgstr ""
+
+msgid "the code expired before it was entered"
+msgstr ""
+
+msgid "the file is empty"
+msgstr ""
+
+msgid "the sign-in stopped unexpectedly"
+msgstr ""
+
+msgid "the site gave no code"
+msgstr ""
+
+msgid "the site gave no token"
+msgstr ""
+
+msgid "{count} file(s) added to the library: {where_}"
+msgstr ""
+
+msgid "{} kB"
+msgstr ""
+
+msgid "Projects are saved in {}."
+msgstr ""
+
+msgid "Projects folder…"
+msgstr ""
+
+msgid "Where the projects are saved unless you choose elsewhere. Now: {projects}"
+msgstr ""
+
+msgid "Forget this take"
+msgstr ""
+
+msgid "the archive holds no project"
+msgstr ""
+
+msgid "Its project opens in OpenGarageMusic."
+msgstr ""
+
+msgid "Line {line} of “{file}”: “{text}” is not a program from 0 to 127 for {device}."
+msgstr ""
+
+msgid "{count} songs read from “{file}”; {added} devices added, the mode is the chain's."
+msgstr ""
+
+msgid "{label}: the device “{device}” is not in the chain (Settings > Devices…)."
+msgstr ""
+
+msgid "{label}: it has no message (right-click it, Change…)."
+msgstr ""
+
+msgid "{label}: {count} messages sent."
+msgstr ""
+
+msgid "Device {n}"
+msgstr ""
+
+msgid "{name} is taken out of the chain, with {dropped} messages of the songs."
+msgstr ""
+
+msgid "Switcher"
+msgstr ""
+
+msgid "Chain"
+msgstr ""
+
+msgid "Control change"
+msgstr ""
+
+msgid "System exclusive"
+msgstr ""
+
+msgid "Any device"
+msgstr ""
+
+msgid "A list of songs, one a line: number, artist, song, and the text of its button (optional), separated by commas or semicolons. A further column named after a device of the chain holds the program it receives for the song."
+msgstr ""
+
+msgid "Mode: {mode}"
+msgstr ""
+
+msgid "Switcher: each song sends one number, as a bank select or a program change, to a pedal switcher that sets the other pedals itself. Chain: each song sends its own messages to the devices of the chain, each on its channel."
+msgstr ""
+
+msgid "Devices…"
+msgstr ""
+
+msgid "The devices of the chain: a name, a model and a MIDI channel each"
+msgstr ""
+
+msgid "{output} · chain · {count} devices"
+msgstr ""
+
+msgid "Sent: {bytes}"
+msgstr ""
+
+msgid "< Songs"
+msgstr ""
+
+msgid "Devices"
+msgstr ""
+
+msgid "In the chain's mode, each song sends its messages to these devices, each on its channel. A device column of a CSV file imported, named like one of them, gives each song the program it receives."
+msgstr ""
+
+msgid "No device yet."
+msgstr ""
+
+msgid "Device"
+msgstr ""
+
+msgid "Model"
+msgstr ""
+
+msgid "Channel"
+msgstr ""
+
+msgid "Add a device"
+msgstr ""
+
+msgid "Its number in the list; the switcher's mode sends it"
+msgstr ""
+
+msgid "Messages"
+msgstr ""
+
+msgid "Sent in this order when the song is chosen, each to its device on the device's channel"
+msgstr ""
+
+msgid "Add a message"
+msgstr ""
+
+msgid "Send now"
+msgstr ""
+
+msgid "Sends the messages to the MIDI output, to try them"
+msgstr ""
+
+msgid "No device yet: Settings > Devices…"
+msgstr ""
+
+msgid "A bank select (control changes 0 and 32) before the program change"
+msgstr ""
+
+msgid "Program"
+msgstr ""
+
+msgid "Value"
+msgstr ""
+
+msgid "Hex bytes (F0 … F7)"
+msgstr ""
+
+msgid "Delay (ms)"
+msgstr ""
+
+msgid "the MIDI input “{name}” is not connected"
+msgstr ""
+
+msgid "the MIDI input “{name}” cannot be opened ({e}): is another program using it?"
+msgstr ""
+
+msgid "no MIDI output chosen (Settings > MIDI output)"
+msgstr ""
+
+msgid "no MIDI input chosen (Settings > MIDI input)"
+msgstr ""
+
+msgid "The device answers: maker {maker}, family {family}."
+msgstr ""
+
+msgid "The names of the memories are read."
+msgstr ""
+
+msgid "{} is read."
+msgstr ""
+
+msgid "The pedal plays {}."
+msgstr ""
+
+msgid "The patch is sent to the pedal, to be heard; Store keeps it."
+msgstr ""
+
+msgid "{} read back differs in {differ} bytes."
+msgstr ""
+
+msgid "{} is stored in the pedal, and read back the same."
+msgstr ""
+
+msgid "The program change map is read."
+msgstr ""
+
+msgid "The program change map read back differs."
+msgstr ""
+
+msgid "The program change map is written in the pedal."
+msgstr ""
+
+msgid "The system settings are read."
+msgstr ""
+
+msgid "The system settings are written in the pedal."
+msgstr ""
+
+msgid "{} memories are read."
+msgstr ""
+
+msgid "{label} is no memory of the {}"
+msgstr ""
+
+msgid "the patch {label} of the file is not whole"
+msgstr ""
+
+msgid "{done} of the file are written in the pedal."
+msgstr ""
+
+msgid "{} messages sent."
+msgstr ""
+
+msgid "The module was not opened: {e}"
+msgstr ""
+
+msgid "This device has no module: give it a model under Devices."
+msgstr ""
+
+msgid "Failed: {text}"
+msgstr ""
+
+msgid "Pedal file"
+msgstr ""
+
+msgid "{} patches are saved in {}."
+msgstr ""
+
+msgid "The file was not written: {e}"
+msgstr ""
+
+msgid "{count} patches read from the file; the pedal is not written until you ask."
+msgstr ""
+
+msgid "< Devices"
+msgstr ""
+
+msgid "Output {output} · input {input}"
+msgstr ""
+
+msgid "Identify"
+msgstr ""
+
+msgid "Asks the pedal who it is"
+msgstr ""
+
+msgid "Patches"
+msgstr ""
+
+msgid "Program change map"
+msgstr ""
+
+msgid "System"
+msgstr ""
+
+msgid "Store the patch edited in the memory {} of the pedal? What it holds is kept in the folder of the list first."
+msgstr ""
+
+msgid "Write the {} patches of the file in the memories of the pedal, each in the place its name says?"
+msgstr ""
+
+msgid "Write the program change map in the pedal?"
+msgstr ""
+
+msgid "Write the system settings in the pedal?"
+msgstr ""
+
+msgid "Yes"
+msgstr ""
+
+msgid "No"
+msgstr ""
+
+msgid "Read the names"
+msgstr ""
+
+msgid "The name of each memory of the pedal"
+msgstr ""
+
+msgid "Read every memory"
+msgstr ""
+
+msgid "Every patch of the pedal, into the file"
+msgstr ""
+
+msgid "(edited: the pedal plays it, the memory is unchanged)"
+msgstr ""
+
+msgid "Store…"
+msgstr ""
+
+msgid "Writes the patch edited in this memory of the pedal"
+msgstr ""
+
+msgid "Init"
+msgstr ""
+
+msgid "Every parameter at its first value"
+msgstr ""
+
+msgid "Read again"
+msgstr ""
+
+msgid "Take the file's"
+msgstr ""
+
+msgid "The patch the file holds for this memory"
+msgstr ""
+
+msgid "Reading the patch…"
+msgstr ""
+
+msgid "Choose a memory on the left: the pedal plays it, and its patch is read."
+msgstr ""
+
+msgid "Read"
+msgstr ""
+
+msgid "Write…"
+msgstr ""
+
+msgid "Which memory each program change calls, by bank select (0 to 2) and program (0 to 127)"
+msgstr ""
+
+msgid "Not read yet."
+msgstr ""
+
+msgid "Bank {bank}, program {program}"
+msgstr ""
+
+msgid "The patches known, the program change map and the system, as a JSON file"
+msgstr ""
+
+msgid "Load…"
+msgstr ""
+
+msgid "A file saved here, or a backup of the maker's editor (.bel)"
+msgstr ""
+
+msgid "Send the file to the pedal…"
+msgstr ""
+
+msgid "No file yet: the patches read go in it."
+msgstr ""
+
+msgid "{} memories kept before they were written, in the folder of the list."
+msgstr ""
+
+msgid "Into the memory chosen, to be heard"
+msgstr ""
+
+msgid "MIDI input: {current}"
+msgstr ""
+
+msgid "Where the pedal modules read the pedals' answers"
+msgstr ""
+
+msgid "Configure…"
+msgstr ""
+
+msgid "Its patches, program change map and system, over the MIDI output and input chosen"
+msgstr ""
+
+msgid "Load a backup of your switcher (made with its editor), or start from the one bank here."
+msgstr ""
+
+msgid "G3S backup"
+msgstr ""
+
+msgid "{banks} banks read."
+msgstr ""
+
+msgid "The file is not a backup of the switcher: {e}"
+msgstr ""
+
+msgid "Written in {} ({checked}): restore it in the switcher with its editor."
+msgstr ""
+
+msgid "The backup is sound: {checked}."
+msgstr ""
+
+msgid "The backup is not sound: {e}"
+msgstr ""
+
+msgid "{added} banks added; the switcher holds {} at most."
+msgstr ""
+
+msgid "{} banks named after the songs, {added} added."
+msgstr ""
+
+msgid "{added} songs added to the list from the banks."
+msgstr ""
+
+msgid "(edited)"
+msgstr ""
+
+msgid "Load a backup…"
+msgstr ""
+
+msgid "A backup made by the switcher's editor (.g3b)"
+msgstr ""
+
+msgid "A backup for the switcher's editor to restore"
+msgstr ""
+
+msgid "Check"
+msgstr ""
+
+msgid "As the switcher checks a backup restored"
+msgstr ""
+
+msgid "New"
+msgstr ""
+
+msgid "One bank, cleared; the global settings of a real backup are better kept: load one first"
+msgstr ""
+
+msgid "Banks from the songs"
+msgstr ""
+
+msgid "A bank a song of the list, after the first bank, named after it"
+msgstr ""
+
+msgid "Songs from the banks"
+msgstr ""
+
+msgid "A song of the list for each bank named"
+msgstr ""
+
+msgid "Banks"
+msgstr ""
+
+msgid "Song mode"
+msgstr ""
+
+msgid "The switcher shows the names of the banks, not their numbers"
+msgstr ""
+
+msgid "Name of the bank, two lines of ten with | between"
+msgstr ""
+
+msgid "Presets"
+msgstr ""
+
+msgid "Show the 14 hidden presets"
+msgstr ""
+
+msgid "The presets 15 to 28 of a bank, reached by the editor only"
+msgstr ""
+
+msgid "Name"
+msgstr ""
+
+msgid "Loops on"
+msgstr ""
+
+msgid "Order of the loops in the signal"
+msgstr ""
+
+msgid "Every loop, on or off, in the order the signal goes through them"
+msgstr ""
+
+msgid "MIDI messages of the preset"
+msgstr ""
+
+msgid "Up to twenty: a program change or a control change, when the switch is pressed, released or held"
+msgstr ""
+
+msgid "ch"
+msgstr ""
+
+msgid "CC"
+msgstr ""
+
+msgid "PC"
+msgstr ""
+
+msgid "value"
+msgstr ""
+
+msgid "Add a MIDI message"
+msgstr ""
+
+msgid "One bank, cleared."
+msgstr ""
+
+msgid "Its banks, presets and MIDI messages, in a backup file its editor restores"
+msgstr ""
+
+msgid "AI script"
+msgstr ""
+
+msgid "The script was not read: {e}"
+msgstr ""
+
+msgid "{count} actions, {errors} with errors."
+msgstr ""
+
+msgid "the pedal “{key}” is not one the program describes"
+msgstr ""
+
+msgid "add a device of model {key} under Devices"
+msgstr ""
+
+msgid "“{}” is no memory of the {}"
+msgstr ""
+
+msgid "Applying…"
+msgstr ""
+
+msgid "{done} actions done, {failed} failed."
+msgstr ""
+
+msgid "{count} actions are written in {}."
+msgstr ""
+
+msgid "Guide for an AI"
+msgstr ""
+
+msgid "The guide is written in {}: give it to your AI, then apply the script it writes."
+msgstr ""
+
+msgid "Apply"
+msgstr ""
+
+msgid "Writes the pedals and the G3S backup as the actions say; each memory written is kept before and read back after"
+msgstr ""
+
+msgid "Correct the script (or the chain) before applying it."
+msgstr ""
+
+msgid "Running…"
+msgstr ""
+
+msgid "Apply an AI script…"
+msgstr ""
+
+msgid "A JSON file an AI wrote from the guide: patches of the pedals, their program change map, banks and presets of the G3S. Reviewed before anything is written."
+msgstr ""
+
+msgid "Guide for an AI…"
+msgstr ""
+
+msgid "Writes the guide that teaches an AI to write scripts for your pedals: give it to the AI with your request"
+msgstr ""
+
+msgid "Export for an AI…"
+msgstr ""
+
+msgid "This patch as a script an AI can read and change"
+msgstr ""
+
+msgid "Every patch of the file as a script an AI can read and change"
+msgstr ""
+
+msgid "The backup as a script an AI can read and change"
+msgstr ""
+
+msgid "the API cannot listen on port {port}: {e}"
+msgstr ""
+
+msgid "An AI asks to write the memory {} of the {pedal}."
+msgstr ""
+
+msgid "An AI asks to write the program change map of the {pedal}."
+msgstr ""
+
+msgid "An AI asks to write the system settings of the {pedal}."
+msgstr ""
+
+msgid "The API listens on http://127.0.0.1:{}/ for an AI's agent."
+msgstr ""
+
+msgid "off"
+msgstr ""
+
+msgid "API for an AI…"
+msgstr ""
+
+msgid "A local API an AI's agent on this computer talks to, with a token; what it may write"
+msgstr ""
+
+msgid "API for an AI"
+msgstr ""
+
+msgid "An agent of an AI running on this computer (Claude Code, a script…) can read and write your pedals through a local API, as the guide for an AI describes. An AI in a web page cannot reach it: give it the guide and apply its script instead."
+msgstr ""
+
+msgid "Serve the API while the MIDI Pilot is open"
+msgstr ""
+
+msgid "Port"
+msgstr ""
+
+msgid "Now: {listening}"
+msgstr ""
+
+msgid "Token"
+msgstr ""
+
+msgid "New token"
+msgstr ""
+
+msgid "The old one stops working"
+msgstr ""
+
+msgid "Write the pedals without asking me each time"
+msgstr ""
+
+msgid "Otherwise each write waits for your Yes at the bottom of the window"
+msgstr ""
+
+msgid "For the agent, for example:"
+msgstr ""
+
+msgid "Export the songs for an AI…"
+msgstr ""
+
+msgid "The songs and their messages as a script an AI can read and change"
+msgstr ""
+
+msgid "Export the pedalboard for an AI…"
+msgstr ""
+
+msgid "The chain, the loops of the switcher, the songs, the G3S backup loaded and every memory known of the pedals, as one file an AI reads before writing a script"
+msgstr ""
+
+msgid "The pedalboard is written in {}, with {count} actions: give it to your AI with the guide."
+msgstr ""
+
+msgid "Pedalboard"
+msgstr ""
+
+msgid "Which pedals sit in which loops, the order of the signal, the bank switches: what an AI needs to know of your board"
+msgstr ""
+
+msgid "The pedals in each loop of the switcher, in the order the signal goes through them. A MIDI pedal names the device of the chain that drives it."
+msgstr ""
+
+msgid "Loop {}"
+msgstr ""
+
+msgid "Pedal"
+msgstr ""
+
+msgid "kind"
+msgstr ""
+
+msgid "not MIDI"
+msgstr ""
+
+msgid "Add a pedal"
+msgstr ""
+
+msgid "Order of the signal"
+msgstr ""
+
+msgid "The twelve loops in the order the signal goes through them, as you wired them; what a new preset starts from"
+msgstr ""
+
+msgid "Bank switches"
+msgstr ""
+
+msgid "The footswitches that change banks, where no preset goes; a setting of the switcher itself"
+msgstr ""

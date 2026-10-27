@@ -1,0 +1,16 @@
+[workspace]
+resolver = "2"
+members = ["crates/og-engine", "apps/opengarage", "apps/og-video", "apps/midi-pilot", "tools/og-clap-test"]
+
+[workspace.package]
+version = "0.9.21"
+edition = "2021"
+publish = false
+license = "PolyForm-Noncommercial-1.0.0"
+
+# Audio code is unusable unoptimised, so keep some optimisation in debug builds.
+[profile.dev]
+opt-level = 1
+
+[profile.dev.package."*"]
+opt-level = 2

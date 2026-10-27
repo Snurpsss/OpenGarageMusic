@@ -1,0 +1,57 @@
+{
+  "format_version": 2,
+  "name": "Songsterr",
+  "home": "https://www.songsterr.com",
+  "offers": {
+    "en": "Guitar, bass and drum tablatures written by its users, with every technique (bends, slides, harmonics…), read by its public player.",
+    "fr": "Tablatures de guitare, de basse et de batterie écrites par ses utilisateurs, avec toutes les techniques (bends, glissés, harmoniques…), lues par son lecteur public.",
+    "de": "Gitarren-, Bass- und Schlagzeugtabulaturen seiner Nutzer, mit allen Spieltechniken (Bends, Slides, Flageoletts…), gelesen von seinem öffentlichen Player.",
+    "es": "Tablaturas de guitarra, bajo y batería escritas por sus usuarios, con todas las técnicas (bends, deslizamientos, armónicos…), leídas por su reproductor público.",
+    "it": "Tablature di chitarra, basso e batteria scritte dai suoi utenti, con tutte le tecniche (bend, slide, armonici…), lette dal suo lettore pubblico.",
+    "pt": "Tablaturas de guitarra, baixo e bateria escritas pelos seus utilizadores, com todas as técnicas (bends, slides, harmónicos…), lidas pelo seu leitor público."
+  },
+  "headers": { "Accept": "application/json", "Origin": "https://www.songsterr.com", "Referer": "https://www.songsterr.com/" },
+  "search": [
+    { "steps": [ {
+      "get": "{home}/api/search?pattern={query}&size=50&from=0",
+      "items": { "json": "records" },
+      "fields": {
+        "id": { "json": "songId" },
+        "artist": { "json": "artist" },
+        "title": { "json": "title" }
+      },
+      "require": ["id"],
+      "tracks": {
+        "json": "tracks",
+        "fields": {
+          "name": { "json": "name" },
+          "detail": { "json": "instrument" },
+          "drums": { "json": "instrumentId", "equals": "1024" },
+          "vocal": { "json": "isVocalTrack", "equals": "true" }
+        }
+      }
+    } ] }
+  ],
+  "open": [
+    { "get": "{home}/api/meta/{id}", "fields": { "revision": { "json": "revisionId" }, "image": { "json": "image" } } },
+    { "download": "https://{host}.cloudfront.net/{id}/{revision}/{image}/{track}.json", "each_track": true,
+      "try": { "host": ["dqsljvtekg760", "d34shlm8p2ums2", "d3cqchs6g3b5ew"] } }
+  ],
+  "videos": {
+    "get": "{home}/api/video-points/{id}/{revision}/list",
+    "items": { "json": "" },
+    "fields": {
+      "video": { "json": "videoId" },
+      "points": { "json": "points" },
+      "label": { "json": "feature" },
+      "status": { "json": "status" }
+    },
+    "require": ["video", "points"],
+    "where": { "status": "^done$" }
+  },
+  "reader": "songsterr",
+  "display": {
+    "label": "{artist} – {title}",
+    "badge": { "en": "{tracks} tracks", "fr": "{tracks} pistes", "de": "{tracks} Spuren", "es": "{tracks} pistas", "it": "{tracks} tracce", "pt": "{tracks} pistas" }
+  }
+}

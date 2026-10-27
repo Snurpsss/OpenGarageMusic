@@ -1,0 +1,11 @@
+{
+  "name": "Studio",
+  "base": "dark",
+  "colors": {
+    "outline": "#ffffff",
+    "record": "#e65050",
+    "warning": "#ebaa46",
+    "done": "#6ec878"
+  },
+  "tracks": ["#60be78", "#5aa0e6", "#ebaa46", "#c878dc", "#ebc850", "#e66e6e", "#5ac8c8", "#aaaab4"]
+}

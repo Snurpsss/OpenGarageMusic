@@ -1,0 +1,12 @@
+[package]
+name = "midi-pilot"
+version.workspace = true
+edition.workspace = true
+publish.workspace = true
+
+# MidiPilot.exe: starts OpenGarageMusic on its MIDI Pilot window alone, for
+# the stage. A launcher of a few lines; the window itself is the program's.
+
+[[bin]]
+name = "MidiPilot"
+path = "src/main.rs"

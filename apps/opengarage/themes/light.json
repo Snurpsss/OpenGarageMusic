@@ -1,0 +1,25 @@
+{
+  "name": "Light",
+  "base": "light",
+  "colors": {
+    "window": "#f7f7f9",
+    "panel": "#ececf0",
+    "field": "#ffffff",
+    "stripe": "#e2e3e8",
+    "button": "#d8dae1",
+    "button_hover": "#c8cbd5",
+    "button_active": "#b3b7c5",
+    "border": "#b8bbc5",
+    "text": "#33363d",
+    "button_text": "#25282e",
+    "text_strong": "#000000",
+    "selection": "#a9cdf5",
+    "selection_text": "#1c4f85",
+    "link": "#1a6fc4",
+    "outline": "#202227",
+    "record": "#d43c3c",
+    "warning": "#b06e00",
+    "done": "#288c3c"
+  },
+  "tracks": ["#4fae69", "#4a90d9", "#e09a35", "#b76fd6", "#d9b63a", "#e06464", "#3fb5b5", "#8f909c"]
+}

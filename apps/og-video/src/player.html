@@ -1,0 +1,52 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<style>
+  html, body { margin: 0; height: 100%; background: #000; overflow: hidden; }
+  #player { width: 100%; height: 100%; }
+</style>
+</head>
+<body>
+<div id="player"></div>
+<script>
+// The player of YouTube, through its IFrame API, driven by OpenGarageMusic:
+// the program calls og.*; the page tells it, five times a second, where the
+// video is and in what state.
+var player = null, wanted = null;
+function send(message) { window.ipc.postMessage(JSON.stringify(message)); }
+function make(id, at) {
+  player = new YT.Player('player', {
+    videoId: id,
+    playerVars: { playsinline: 1, rel: 0, start: Math.floor(at || 0), origin: location.origin },
+    events: {
+      onReady: function () { send({ ready: true }); },
+      onStateChange: function (e) { send({ s: e.data }); },
+      onError: function (e) { send({ error: e.data }); }
+    }
+  });
+}
+window.og = {
+  load: function (id, at) {
+    if (typeof YT === 'undefined' || !YT.Player) { wanted = [id, at]; return; }
+    if (player && player.cueVideoById) { player.cueVideoById({ videoId: id, startSeconds: at || 0 }); }
+    else { make(id, at); }
+  },
+  play: function () { if (player && player.playVideo) player.playVideo(); },
+  pause: function () { if (player && player.pauseVideo) player.pauseVideo(); },
+  seek: function (t) { if (player && player.seekTo) player.seekTo(Math.max(0, t), true); },
+  volume: function (v) { if (player && player.setVolume) player.setVolume(v); }
+};
+function onYouTubeIframeAPIReady() {
+  if (wanted) { make(wanted[0], wanted[1]); wanted = null; }
+  send({ api: true });
+}
+setInterval(function () {
+  if (player && player.getCurrentTime) { send({ t: player.getCurrentTime(), s: player.getPlayerState() }); }
+}, 200);
+var script = document.createElement('script');
+script.src = 'https://www.youtube.com/iframe_api';
+document.head.appendChild(script);
+</script>
+</body>
+</html>
